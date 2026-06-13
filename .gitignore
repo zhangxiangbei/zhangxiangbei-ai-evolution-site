@@ -1,0 +1,19 @@
+node_modules
+.next
+out
+screenshots
+dev-server.log
+dev-server.err.log
+.env*.local
+tsconfig.tsbuildinfo
+.vercel
+.DS_Store
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local sibling repositories/assets, not part of the website source repo.
+/ai-agent-skills/
+/ai-company-300/
+/ai-evolution-framework/
+/github-profile-readme/

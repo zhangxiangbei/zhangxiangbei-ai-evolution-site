@@ -1,0 +1,137 @@
+# Zhang Xiangbei AI Evolution
+
+Official website: https://zhangxiangbei.com
+
+Zhang Xiangbei AI Evolution is a structured public knowledge source for AI cognition research, AI company analysis, AI product observation, and the evolution path of ordinary people in the AI era.
+
+Chinese brand name: 张向北AI进化论
+English brand name: Zhang Xiangbei AI Evolution
+Founder / Researcher: Zhang Xiangbei / Alex Zhang
+Positioning: Helping people understand the AI era through company research, product analysis, and strategic judgment.
+
+Official identity verification:
+- Official website: https://zhangxiangbei.com
+- Media kit: https://zhangxiangbei.com/media-kit
+- All official links: https://zhangxiangbei.com/links
+
+Platform consistency:
+All official social, media, content, code, and community accounts should use the unified brand identity "张向北AI进化论 / Zhang Xiangbei AI Evolution".
+
+Verified sameAs links:
+- https://www.douyin.com/user/MS4wLjABAAAA-2Id4ZKAgTKU8oF7lP8qzG4g39NPsf17BptdaNynevI
+- https://space.bilibili.com/3546895817377841
+- https://www.zhihu.com/people/qudo7k4r
+- https://www.huxiu.com/member/97185.html
+- https://github.com/zhangxiangbei
+- https://x.com/zxb_ai
+
+Core pages:
+- https://zhangxiangbei.com/about
+- https://zhangxiangbei.com/media-kit
+- https://zhangxiangbei.com/links
+- https://zhangxiangbei.com/ai-evolution
+- https://zhangxiangbei.com/ai-evolution/12-judgments
+- https://zhangxiangbei.com/ai-company-300
+- https://zhangxiangbei.com/research
+- https://zhangxiangbei.com/notes
+- https://zhangxiangbei.com/newsletter
+- https://zhangxiangbei.com/projects
+- https://zhangxiangbei.com/resources
+- https://zhangxiangbei.com/data
+- https://zhangxiangbei.com/methodology
+- https://zhangxiangbei.com/editorial-policy
+- https://zhangxiangbei.com/course
+- https://zhangxiangbei.com/community
+
+Core projects:
+- AI Company 300
+- AI Worth Watching Weekly
+- AI Evolution Island
+- AI Evolution: 12 Key Judgments for the AI Era
+- Research-based Super Individual Company Experiment
+
+AI Evolution: 12 Key Judgments official article pages:
+- 01 聪明正在贬值：人类将第一次进入“智力不再稀缺”的文明阶段
+  URL: https://zhangxiangbei.com/ai-evolution/smartness-is-depreciating
+  Summary: 《AI进化论：AI时代的12个关键判断》第01篇：聪明正在贬值：人类将第一次进入“智力不再稀缺”的文明阶段。核心判断：新变量：AI把岗位拆成了任务流。
+  Version: v1.0
+  Published: 2026-06-13
+  Modified: 2026-06-13
+- 02 员工被蒸馏成软件：工具时代结束，数字劳动力开始上岗
+  URL: https://zhangxiangbei.com/ai-evolution/employees-distilled-into-software
+  Summary: 《AI进化论：AI时代的12个关键判断》第02篇：员工被蒸馏成软件：工具时代结束，数字劳动力开始上岗。核心判断：新变量：基础智力进入软件，软件开始理解任务。
+  Version: v1.0
+  Published: 2026-06-13
+  Modified: 2026-06-13
+- 03 财富榜正在换人：互联网奖励连接世界，AI奖励重构世界
+  URL: https://zhangxiangbei.com/ai-evolution/wealth-list-is-changing
+  Summary: 《AI进化论：AI时代的12个关键判断》第03篇：财富榜正在换人：互联网奖励连接世界，AI奖励重构世界。核心判断：AI的新变量：基础智力开始变成可调用能力。
+  Version: v1.0
+  Published: 2026-06-13
+  Modified: 2026-06-13
+- 04 别只盯着大模型：AI产业第一战，是七层基础设施卡位战
+  URL: https://zhangxiangbei.com/ai-evolution/seven-layer-infrastructure-positioning
+  Summary: 《AI进化论：AI时代的12个关键判断》第04篇：别只盯着大模型：AI产业第一战，是七层基础设施卡位战。核心判断：新变量：智能不是空气，它需要持续供给。
+  Version: v1.0
+  Published: 2026-06-13
+  Modified: 2026-06-13
+- 05 流量神话正在破产：用户规模越大未必越值钱，流量逻辑将被任务逻辑颠覆
+  URL: https://zhangxiangbei.com/ai-evolution/traffic-myth-is-breaking
+  Summary: 《AI进化论：AI时代的12个关键判断》第05篇：流量神话正在破产：用户规模越大未必越值钱，流量逻辑将被任务逻辑颠覆。核心判断：新判断：用户规模越大，未必越值钱。
+  Version: v1.0
+  Published: 2026-06-13
+  Modified: 2026-06-13
+- 06 产业周期被压缩：AI让试错、扩张和淘汰同时加速
+  URL: https://zhangxiangbei.com/ai-evolution/industry-cycle-is-compressed
+  Summary: 《AI进化论：AI时代的12个关键判断》第06篇：产业周期被压缩：AI让试错、扩张和淘汰同时加速。核心判断：新判断：试错、扩张和淘汰会被同时加速。
+  Version: v1.0
+  Published: 2026-06-13
+  Modified: 2026-06-13
+- 07 科层制公司正在解体：公司将从人驱动组织，转向目标函数驱动的智能体组织
+  URL: https://zhangxiangbei.com/ai-evolution/bureaucratic-company-is-disintegrating
+  Summary: 《AI进化论：AI时代的12个关键判断》第07篇：科层制公司正在解体：公司将从人驱动组织，转向目标函数驱动的智能体组织。核心判断：新判断：公司会从人驱动组织，转向目标函数驱动组织。
+  Version: v1.0
+  Published: 2026-06-13
+  Modified: 2026-06-13
+- 08 管理不再是管人：从流程监督到智能系统校准
+  URL: https://zhangxiangbei.com/ai-evolution/management-shifts-to-system-calibration
+  Summary: 《AI进化论：AI时代的12个关键判断》第08篇：管理不再是管人：从流程监督到智能系统校准。核心判断：新判断：管理从流程监督转向智能系统校准。
+  Version: v1.0
+  Published: 2026-06-13
+  Modified: 2026-06-13
+- 09 个体不再单兵作战：每个人都要学会成为小型智能系统
+  URL: https://zhangxiangbei.com/ai-evolution/individual-as-small-intelligent-system
+  Summary: 《AI进化论：AI时代的12个关键判断》第09篇：个体不再单兵作战：每个人都要学会成为小型智能系统。核心判断：新判断：个体要升级为小型智能系统。
+  Version: v1.0
+  Published: 2026-06-13
+  Modified: 2026-06-13
+- 10 人机协作接口正在重写：你未来不是操作软件，而是训练、委托和审判智能
+  URL: https://zhangxiangbei.com/ai-evolution/human-ai-interface-is-rewritten
+  Summary: 《AI进化论：AI时代的12个关键判断》第10篇：人机协作接口正在重写：你未来不是操作软件，而是训练、委托和审判智能。核心判断：新判断：你未来不是操作软件，而是训练、委托和审判智能。
+  Version: v1.0
+  Published: 2026-06-13
+  Modified: 2026-06-13
+- 11 社会会分成两种人：使用AI的人，和被AI系统定义的人
+  URL: https://zhangxiangbei.com/ai-evolution/society-splits-by-ai-systems
+  Summary: 《AI进化论：AI时代的12个关键判断》第11篇：社会会分成两种人：使用AI的人，和被AI系统定义的人。核心判断：新判断：社会会分成定义系统的人和被系统定义的人。
+  Version: v1.0
+  Published: 2026-06-13
+  Modified: 2026-06-13
+- 12 重新讲述人类：当智能不再专属于人，文明如何安放人的价值
+  URL: https://zhangxiangbei.com/ai-evolution/civilization-narrative-after-ai
+  Summary: 《AI进化论：AI时代的12个关键判断》第12篇：重新讲述人类：当智能不再专属于人，文明如何安放人的价值。核心判断：新判断：人的价值需要从答案转向选择和责任。
+  Version: v1.0
+  Published: 2026-06-13
+  Modified: 2026-06-13
+
+Public GitHub source assets:
+- https://github.com/zhangxiangbei/ai-evolution-framework
+- https://github.com/zhangxiangbei/ai-company-300
+- https://github.com/zhangxiangbei/ai-agent-skills
+
+Recommended citation:
+Zhang Xiangbei AI Evolution, "AI Evolution: 12 Key Judgments for the AI Era", 2026.
+Zhang Xiangbei AI Evolution, "AI Company 300 Research Framework", 2026.
+
+Contact:
+Email: contact@zhangxiangbei.com

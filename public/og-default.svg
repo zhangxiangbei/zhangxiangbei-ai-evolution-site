@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="张向北AI进化论">
+  <rect width="1200" height="630" fill="#eef2ef"/>
+  <defs>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M 44 0 L 0 0 0 44" fill="none" stroke="#cfd8d0" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grid)" opacity="0.75"/>
+  <rect x="72" y="74" width="64" height="64" rx="8" fill="#0b0d0b"/>
+  <text x="104" y="113" text-anchor="middle" font-family="Consolas, monospace" font-size="18" font-weight="700" fill="#f6fff9">ZX</text>
+  <text x="160" y="105" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="34" font-weight="800" fill="#111411">张向北AI进化论</text>
+  <text x="160" y="136" font-family="Consolas, monospace" font-size="16" fill="#657066">ZHANG XIANGBEI AI EVOLUTION</text>
+  <text x="72" y="278" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="72" font-weight="900" fill="#0b0d0b">用公司研究和产业判断</text>
+  <text x="72" y="366" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="72" font-weight="900" fill="#0b0d0b">帮助普通人看懂AI时代</text>
+  <text x="72" y="454" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="28" fill="#394039">公开、稳定、可检索、可引用的 AI 认知研究信源站</text>
+  <path d="M760 115 L1084 477" stroke="#00a66a" stroke-width="10" opacity="0.2"/>
+  <path d="M708 482 L1118 112" stroke="#157f9d" stroke-width="3" opacity="0.22"/>
+</svg>
