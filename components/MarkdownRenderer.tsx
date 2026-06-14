@@ -9,18 +9,25 @@ type MarkdownRendererProps = {
 
 function renderInline(text: string) {
   const parts: ReactNode[] = [];
-  const linkPattern = /\[([^\]]+)\]\(([^)]+)\)/g;
+  const inlinePattern = /\*\*([^*]+)\*\*|\[([^\]]+)\]\(([^)]+)\)/g;
   let lastIndex = 0;
   let match: RegExpExecArray | null;
 
-  while ((match = linkPattern.exec(text))) {
+  while ((match = inlinePattern.exec(text))) {
     if (match.index > lastIndex) {
       parts.push(text.slice(lastIndex, match.index));
     }
 
-    const label = match[1];
-    const href = match[2];
-    const key = `${href}-${match.index}`;
+    const boldText = match[1];
+    const label = match[2];
+    const href = match[3];
+    const key = `${match.index}-${match[0]}`;
+
+    if (boldText) {
+      parts.push(<strong key={key}>{boldText}</strong>);
+      lastIndex = match.index + match[0].length;
+      continue;
+    }
 
     if (href.startsWith("/")) {
       parts.push(
