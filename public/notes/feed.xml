@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AI观察笔记</title>
-    <link>https://zhangxiangbei.com/notes</link>
-    <description>记录AI公司、AI产品、AI产业趋势中的高价值信号。</description>
+    <title>AI观察笔记 RSS</title>
+    <link>https://www.zhangxiangbei.com/notes</link>
+    <description>张向北AI进化论的轻量判断流。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 20 May 2026 00:00:00 +0800</lastBuildDate>
-    <atom:link href="https://zhangxiangbei.com/notes/feed.xml" rel="self" type="application/rss+xml"/>
+    <lastBuildDate>2026-06-14T00:00:00+08:00</lastBuildDate>
+    <atom:link href="https://www.zhangxiangbei.com/notes/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>为什么普通人需要关注AI公司？</title>
-      <link>https://zhangxiangbei.com/notes</link>
-      <guid>https://zhangxiangbei.com/notes#why-ordinary-people-need-ai-company-research</guid>
-      <pubDate>Wed, 20 May 2026 00:00:00 +0800</pubDate>
-      <description>从AI公司变化理解普通人的工作、学习、创作和商业机会。</description>
+      <link>https://www.zhangxiangbei.com/notes#why-ordinary-people-need-ai-company-research</link>
+      <guid>https://www.zhangxiangbei.com/notes#why-ordinary-people-need-ai-company-research</guid>
+      <description>AI公司变化往往先于普通人的工作方式变化。</description>
+      <pubDate>2026-06-14T00:00:00+08:00</pubDate>
     </item>
     <item>
       <title>AI产品变化背后，往往是工作方式变化。</title>
-      <link>https://zhangxiangbei.com/notes</link>
-      <guid>https://zhangxiangbei.com/notes#ai-product-workflow-change</guid>
-      <pubDate>Wed, 20 May 2026 00:00:00 +0800</pubDate>
-      <description>AI产品变化背后，往往对应着人的工作方式和任务结构变化。</description>
+      <link>https://www.zhangxiangbei.com/notes#ai-product-workflow-change</link>
+      <guid>https://www.zhangxiangbei.com/notes#ai-product-workflow-change</guid>
+      <description>观察AI产品，不只是看功能，而是看任务结构如何改变。</description>
+      <pubDate>2026-06-14T00:00:00+08:00</pubDate>
     </item>
   </channel>
 </rss>

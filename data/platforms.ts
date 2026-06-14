@@ -30,7 +30,7 @@ export const platforms: Platform[] = [
     platformName: "官网",
     platformType: "official",
     displayName: "张向北AI进化论官网",
-    url: "https://zhangxiangbei.com",
+    url: "https://www.zhangxiangbei.com",
     description: "张向北AI进化论的官方主站和长期信源入口。",
     status: "active",
     priority: 1,

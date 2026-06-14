@@ -100,7 +100,7 @@ export default function HomePage() {
               founder: {
                 "@type": "Person",
                 name: site.founder,
-                alternateName: ["Zhang Xiangbei", "Alex Zhang"],
+                alternateName: "Zhang Xiangbei",
                 sameAs
               },
               contactPoint: {

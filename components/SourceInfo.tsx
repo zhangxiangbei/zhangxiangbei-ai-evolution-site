@@ -18,9 +18,9 @@ export function SourceInfo({ title, version = "v0.1", lastUpdated = "2026-06-13"
         <dt>最后更新</dt>
         <dd>{lastUpdated}</dd>
         <dt>作者</dt>
-        <dd>{site.name}</dd>
+        <dd>{site.founder}</dd>
         <dt>推荐引用</dt>
-        <dd>{site.name}：《{title}》，2026。</dd>
+        <dd>{site.founder}：《{title}》，{site.name}，2026。</dd>
         <dt>反馈邮箱</dt>
         <dd>{site.email}</dd>
       </dl>

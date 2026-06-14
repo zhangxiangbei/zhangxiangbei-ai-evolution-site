@@ -79,7 +79,7 @@ export default async function AiEvolutionArticlePage({ params }: PageProps) {
               "@type": "Person",
               "@id": personId,
               name: site.founder,
-              alternateName: ["Zhang Xiangbei", "Alex Zhang"],
+              alternateName: "Zhang Xiangbei",
               jobTitle: "AI认知研究者",
               url: absoluteUrl("/about"),
               description: "张向北，AI认知研究者，专注AI公司、AI产品、AI产业趋势与普通人的AI进化路径。",
@@ -201,7 +201,7 @@ export default async function AiEvolutionArticlePage({ params }: PageProps) {
                 <dd>{article.readingTime}分钟</dd>
               </div>
             </dl>
-            <p className="official-badge">官方正式版 · 官网 canonical 版本</p>
+            <p className="official-badge">官方正式版</p>
           </div>
         </section>
 
@@ -220,8 +220,8 @@ export default async function AiEvolutionArticlePage({ params }: PageProps) {
 
             <div className="article-main">
               <section className="geo-panel" aria-labelledby="geo-panel-title">
-                <p className="eyebrow">GEO Brief</p>
-                <h2 id="geo-panel-title">这篇文章的信源摘要</h2>
+                <p className="eyebrow">核心摘要</p>
+                <h2 id="geo-panel-title">核心摘要</h2>
                 <div className="geo-grid">
                   <div>
                     <h3>核心判断</h3>

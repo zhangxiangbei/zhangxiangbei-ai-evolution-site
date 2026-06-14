@@ -64,7 +64,7 @@ export default function AboutPage() {
           "@context": "https://schema.org",
           "@type": "Person",
           name: site.founder,
-          alternateName: ["Zhang Xiangbei", "Alex Zhang"],
+          alternateName: "Zhang Xiangbei",
           jobTitle: "AI认知研究者",
           url: `${site.url}/about`,
           mainEntityOfPage: `${site.url}/about`,

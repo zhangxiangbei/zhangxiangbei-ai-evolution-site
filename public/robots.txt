@@ -13,4 +13,4 @@ Allow: /
 User-agent: OAI-SearchBot
 Allow: /
 
-Sitemap: https://zhangxiangbei.com/sitemap.xml
+Sitemap: https://www.zhangxiangbei.com/sitemap.xml

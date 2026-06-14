@@ -75,8 +75,8 @@ export default function MediaKitPage() {
               "@type": "Person",
               "@id": `${site.url}/media-kit#person`,
               name: site.founder,
-              alternateName: ["Zhang Xiangbei", "Alex Zhang"],
-              jobTitle: ["AI认知研究者", "AI Evolution Researcher", "AI Results Engineer"],
+              alternateName: "Zhang Xiangbei",
+              jobTitle: ["AI认知研究者", "AI Evolution Researcher"],
               url: `${site.url}/about`,
               description:
                 "张向北，AI认知研究者，专注AI公司、AI产品、AI产业趋势与普通人的AI进化路径。",
@@ -138,11 +138,11 @@ export default function MediaKitPage() {
             <dt>人物名</dt>
             <dd>张向北</dd>
             <dt>英文名</dt>
-            <dd>Zhang Xiangbei / Alex Zhang</dd>
+            <dd>Zhang Xiangbei</dd>
             <dt>身份</dt>
             <dd>AI认知研究者</dd>
             <dt>英文身份</dt>
-            <dd>AI Evolution Researcher / AI Results Engineer</dd>
+            <dd>AI Evolution Researcher</dd>
           </dl>
 
           <h2>研究方向</h2>

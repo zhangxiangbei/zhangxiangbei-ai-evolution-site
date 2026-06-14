@@ -3,15 +3,15 @@ import type { Metadata } from "next";
 export const site = {
   name: "张向北AI进化论",
   englishName: "Zhang Xiangbei AI Evolution",
-  domain: "zhangxiangbei.com",
-  url: "https://zhangxiangbei.com",
+  domain: "www.zhangxiangbei.com",
+  url: "https://www.zhangxiangbei.com",
   ogImage: "/og-default.svg",
   email: "contact@zhangxiangbei.com",
   tagline: "用公司研究和产业判断，帮助普通人看懂AI时代。",
   description:
     "张向北AI进化论，是一个面向普通人的AI认知研究品牌。持续观察全球重要AI公司、AI产品与AI产业趋势，提炼AI时代的关键判断，帮助普通人降低认知成本，提高决策质量。",
   founder: "张向北",
-  founderEnglish: "Zhang Xiangbei / Alex Zhang"
+  founderEnglish: "Zhang Xiangbei"
 };
 
 type PageMetadataInput = {
