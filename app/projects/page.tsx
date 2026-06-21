@@ -20,7 +20,7 @@ const projects = [
   },
   {
     name: "AI Agent Skills",
-    description: "研究型超级个体使用的AI Agent、OpenClaw、飞书自动化相关Skill模板。",
+    description: "个人研究、写作和内容工作使用的AI Agent、OpenClaw、飞书自动化相关Skill模板。",
     href: "https://github.com/zhangxiangbei/ai-agent-skills"
   },
   {

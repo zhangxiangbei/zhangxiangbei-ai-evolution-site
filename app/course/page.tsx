@@ -1,34 +1,25 @@
 import { JsonLd } from "@/components/JsonLd";
-import { SimpleList } from "@/components/PageBlocks";
+import { LinkButton, SimpleList } from "@/components/PageBlocks";
 import { getSameAsUrls } from "@/data/platforms";
 import { createPageMetadata, site } from "@/lib/site";
 
 export const metadata = createPageMetadata({
-  title: "AI进化论——AI时代普通人的12个关键判断",
-  description: "一门帮助普通人建立AI时代判断框架的认知入门课。",
+  title: "张向北AI课程与训练体系",
+  description: "张向北围绕AI认知框架、真实工作应用和团队AI工作流持续搭建的课程与训练体系。",
   path: "/course"
 });
 
-const problems = [
-  "哪些变化真正重要？",
-  "普通人到底应该学什么？",
-  "AI会不会淘汰我的工作？",
-  "未来十年机会在哪里？",
-  "我应该如何建立自己的AI能力？"
+const learningPath = [
+  "先建立判断框架：知道AI正在改变什么，也知道什么不值得追。",
+  "再进入真实工作：围绕具体任务选择工具、拆解流程并完成交付。",
+  "最后形成工作流：把一次会用沉淀为个人或团队可以重复运行的系统。"
 ];
 
-const suitable = [
-  "想看懂AI时代变化的普通人",
-  "对AI感到焦虑但不知道如何行动的职场人",
-  "希望用AI提升效率的创作者",
-  "正在思考AI机会的创业者和小老板",
-  "想建立长期认知框架的学习者"
-];
-
-const unsuitable = [
-  "只想学习某个具体工具按钮操作的人",
-  "只追求短期暴富项目的人",
-  "不愿意思考，只想要标准答案的人"
+const coursePrinciples = [
+  "不以工具数量衡量学习成果。",
+  "不脱离真实任务讲AI应用。",
+  "不把演示效果当作工作结果。",
+  "每一轮训练都要留下方法、模板或工作流。"
 ];
 
 const sameAs = getSameAsUrls();
@@ -39,56 +30,91 @@ export default function CoursePage() {
       <JsonLd
         data={{
           "@context": "https://schema.org",
-          "@type": "Course",
-          name: "AI进化论——AI时代普通人的12个关键判断",
-          description: "一门帮助普通人建立AI时代判断框架的认知入门课。",
-          url: `${site.url}/course`,
-          inLanguage: "zh-CN",
-          provider: {
-            "@type": "Organization",
-            name: site.name,
-            url: site.url,
-            sameAs
-          },
-          offers: {
-            "@type": "Offer",
-            price: "199",
-            priceCurrency: "CNY",
-            availability: "https://schema.org/PreOrder"
-          }
+          "@graph": [
+            {
+              "@type": "CollectionPage",
+              "@id": `${site.url}/course#collection`,
+              name: "张向北AI课程与训练体系",
+              description: "围绕AI认知框架、真实工作应用和团队AI工作流持续搭建的课程与训练体系。",
+              url: `${site.url}/course`,
+              inLanguage: "zh-CN",
+              mainEntity: {
+                "@id": `${site.url}/course#ai-evolution-course`
+              }
+            },
+            {
+              "@type": "Course",
+              "@id": `${site.url}/course#ai-evolution-course`,
+              name: "AI进化论——AI时代普通人的12个关键判断",
+              description: "从12个关键判断出发，建立理解AI时代变化的基础认知框架。",
+              url: `${site.url}/course`,
+              inLanguage: "zh-CN",
+              provider: {
+                "@type": "Person",
+                name: site.founder,
+                url: `${site.url}/about`,
+                jobTitle: site.roles,
+                sameAs
+              },
+              offers: {
+                "@type": "Offer",
+                price: "199",
+                priceCurrency: "CNY",
+                availability: "https://schema.org/PreOrder"
+              }
+            }
+          ]
         }}
       />
+
       <section className="page-hero">
         <div className="page-hero-inner">
-          <p className="eyebrow">Course</p>
-          <h1>AI进化论——AI时代普通人的12个关键判断</h1>
-          <p>一门帮助普通人建立AI时代判断框架的认知入门课。</p>
+          <p className="eyebrow">AI Courses & Training</p>
+          <h1>张向北AI课程与训练体系</h1>
+          <p>从认知框架到真实工作，再到团队AI工作流，逐步把“知道AI”变成“能把AI用起来”。</p>
         </div>
       </section>
 
       <section className="content-section">
         <div className="content-inner prose">
-          <h2>这门课解决什么问题？</h2>
-          <p>你可能每天都看到AI新闻、AI工具、AI课程和AI焦虑，但真正的问题是：</p>
-          <SimpleList items={problems} />
+          <h2>这不是一张卖课清单</h2>
           <p>
-            这门课不是教你追逐每一个新工具，而是帮助你建立一套理解AI时代的判断框架。
+            我更愿意把这里做成一份长期课程地图。每门课都从真实问题出发：先理解变化，再完成任务，最后把方法沉淀成可以继续使用的工作流。
           </p>
 
-          <h2>适合谁？</h2>
-          <SimpleList items={suitable} />
+          <h2>课程体系</h2>
+          <div className="card-grid two">
+            <article className="info-card">
+              <span className="index">01 · 认知基础课</span>
+              <h3>AI进化论——AI时代普通人的12个关键判断</h3>
+              <p>从智能供给、软件形态、公司组织、个人能力到文明叙事，建立理解AI时代变化的基础框架。</p>
+              <p>共12节短课。第一版筹备中，定价199元。</p>
+              <LinkButton href="/ai-evolution/12-judgments">先看12个判断</LinkButton>
+            </article>
 
-          <h2>不适合谁？</h2>
-          <SimpleList items={unsuitable} />
+            <article className="info-card">
+              <span className="index">02 · 规划方向</span>
+              <h3>把AI用进真实工作</h3>
+              <p>面向职场人的AI应用课。围绕真实任务练习信息整理、研究分析、内容表达、方案协作和个人工作流，而不是堆积工具清单。</p>
+            </article>
 
-          <h2>课程结构</h2>
-          <p>共12节短课，对应AI时代普通人的12个关键判断。</p>
+            <article className="info-card">
+              <span className="index">03 · 规划方向</span>
+              <h3>业务团队AI工作流入门</h3>
+              <p>面向团队和企业的AI训练课。从业务任务、流程拆解、知识沉淀和协作边界开始，建立第一套能跑起来的团队AI工作流。</p>
+            </article>
+          </div>
 
-          <h2>价格</h2>
-          <p>199元。</p>
+          <h2>学习路径</h2>
+          <SimpleList items={learningPath} />
 
-          <h2>课程状态</h2>
-          <p>课程创始版处于筹备阶段。可先关注张向北AI进化论，或加入AI进化岛获取后续通知。</p>
+          <h2>训练原则</h2>
+          <SimpleList items={coursePrinciples} />
+
+          <h2>当前状态</h2>
+          <p>
+            第一门认知课正在准备中；另外两个方向仍处于课程研究和训练方案设计阶段。正式开放时，会在官网、公众号和全平台入口同步更新，不提前制造不存在的报名入口。
+          </p>
         </div>
       </section>
     </div>

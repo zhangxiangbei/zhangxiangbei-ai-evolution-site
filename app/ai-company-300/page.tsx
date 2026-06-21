@@ -91,7 +91,7 @@ export default function AiCompany300Page() {
       <section className="content-section">
         <div className="content-inner prose">
           <p>
-            它不是简单的公司排行榜，而是一个结构化观察系统：通过持续研究全球重要AI公司、AI产品和商业模式，帮助普通人理解AI产业正在如何变化。
+            它不是简单的公司排行榜，而是一个结构化观察系统：通过持续研究重要AI公司、AI产品和商业模式，把每天的公司新闻放回产业结构里理解。
           </p>
 
           <h2>为什么普通人也应该关注AI公司？</h2>

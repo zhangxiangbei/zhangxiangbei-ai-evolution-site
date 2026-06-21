@@ -6,12 +6,12 @@ const emailPlatform = getPlatform("邮箱");
 
 const footerLinks = [
   { href: "/", label: "首页" },
-  { href: "/about", label: "关于" },
+  { href: "/about", label: "关于张向北" },
   { href: "/media-kit", label: "媒体资料包" },
   { href: "/links", label: "全平台入口" },
   { href: "/ai-evolution", label: "AI进化论" },
   { href: "/ai-company-300", label: "AI公司300强" },
-  { href: "/course", label: "课程" },
+  { href: "/course", label: "AI课程" },
   { href: "/community", label: "社群" },
   { href: "/notes", label: "AI观察笔记" },
   { href: "/newsletter", label: "AI值得看周刊" },
@@ -27,8 +27,8 @@ export function SiteFooter() {
   return (
     <footer className="site-footer">
       <div>
-        <p className="footer-title">{site.name}</p>
-        <p>{site.name}：{site.tagline}</p>
+        <p className="footer-title">张向北 · {site.name}</p>
+        <p>{site.tagline}</p>
       </div>
       <div className="footer-links" aria-label="页脚导航">
         {footerLinks.map((item) =>

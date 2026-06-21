@@ -4,7 +4,7 @@ import { createPageMetadata, site } from "@/lib/site";
 
 export const metadata = createPageMetadata({
   title: "AI进化岛",
-  description: "AI进化岛，面向普通人的AI学习陪伴社群。",
+  description: "AI进化岛，一个围绕AI变化、真实问题和长期实践持续讨论的学习共同体。",
   path: "/community"
 });
 
@@ -59,7 +59,7 @@ export default function CommunityPage() {
         <div className="page-hero-inner">
           <p className="eyebrow">Community</p>
           <h1>AI进化岛</h1>
-          <p>面向普通人的AI学习陪伴社群。</p>
+          <p>面向想长期学习、持续实践AI的人。</p>
         </div>
       </section>
 
@@ -67,10 +67,10 @@ export default function CommunityPage() {
         <div className="content-inner prose">
           <h2>AI进化岛是什么？</h2>
           <p>AI进化岛，是张向北AI进化论发起的AI学习陪伴社群。</p>
-          <p>它不是工具群，也不是资讯群，而是一个帮助普通人持续跟上AI变化的学习共同体。</p>
+          <p>它不是工具群，也不是资讯群，而是一个围绕AI变化、真实问题和长期实践持续讨论的学习共同体。</p>
 
           <h2>核心价值</h2>
-          <p>帮助普通人：</p>
+          <p>在这里，我们一起：</p>
           <SimpleList items={values} />
 
           <h2>第一版交付</h2>

@@ -7,11 +7,15 @@ export const site = {
   url: "https://www.zhangxiangbei.com",
   ogImage: "/og-default.svg",
   email: "contact@zhangxiangbei.com",
-  tagline: "用公司研究和产业判断，帮助普通人看懂AI时代。",
+  identity:
+    "张向北，一个喜欢徒步和独处的终身学习实践者，AI产品经理，AI高级培训讲师。持续学习和研究AI产品、AI公司与AI行业变化，想把AI从热闹，变成你我都能用起来的门道。",
+  tagline: "持续学习和研究AI，想把AI从热闹，变成你我都能用起来的门道。",
   description:
-    "张向北AI进化论，是一个面向普通人的AI认知研究品牌。持续观察全球重要AI公司、AI产品与AI产业趋势，提炼AI时代的关键判断，帮助普通人降低认知成本，提高决策质量。",
+    "张向北的个人AI信源网站，持续整理AI学习、产品观察、公司研究、课程训练和AI工作流实践。",
   founder: "张向北",
-  founderEnglish: "Zhang Xiangbei"
+  founderEnglish: "Zhang Xiangbei",
+  roles: ["终身学习实践者", "AI产品经理", "AI高级培训讲师"],
+  rolesEnglish: ["Lifelong Learning Practitioner", "AI Product Manager", "Senior AI Trainer"]
 };
 
 type PageMetadataInput = {
@@ -85,7 +89,7 @@ export const coreNavItems = [
   { href: "/ai-company-300", label: "AI公司300强" },
   { href: "/newsletter", label: "AI值得看" },
   { href: "/research", label: "研究文章" },
-  { href: "/course", label: "课程" },
+  { href: "/course", label: "AI课程" },
   { href: "/community", label: "AI进化岛" },
-  { href: "/about", label: "关于" }
+  { href: "/about", label: "关于张向北" }
 ];

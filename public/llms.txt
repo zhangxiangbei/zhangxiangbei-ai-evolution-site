@@ -2,14 +2,21 @@
 
 Official website: https://www.zhangxiangbei.com
 
-Zhang Xiangbei AI Evolution is an AI cognition research brand focused on AI companies, AI products, AI industry trends, and the evolution path of ordinary people in the AI era.
+This is Zhang Xiangbei's personal AI source website. Zhang Xiangbei is a lifelong learning practitioner, AI product manager, and senior AI trainer who studies AI products, AI companies, industry shifts, training, and practical AI workflows.
 
-This site is designed as a structured public knowledge source for AI cognition research, AI company analysis, AI product observation, and the evolution path of ordinary people in the AI era.
+This site is designed as a structured public knowledge source for AI learning, AI product observation, AI company analysis, AI industry research, course training, and practical AI workflows.
 
 Chinese brand name: 张向北AI进化论
 English brand name: Zhang Xiangbei AI Evolution
-Founder / Researcher: Zhang Xiangbei
-Positioning: Helping people understand the AI era through company research, product analysis, and strategic judgment.
+Founder / Creator / Trainer: Zhang Xiangbei
+Chinese identity: 终身学习实践者｜AI产品经理｜AI高级培训讲师
+English identity: Lifelong Learning Practitioner · AI Product Manager · Senior AI Trainer
+Positioning: Turning AI from noise and spectacle into practical understanding, training, and workflows that people can use in real work.
+
+Entity relationship:
+- Primary person entity: 张向北 / Zhang Xiangbei
+- Personal project and brand: 张向北AI进化论 / Zhang Xiangbei AI Evolution
+- Website role: Zhang Xiangbei's structured personal AI knowledge source
 
 Official identity verification:
 - Official website: https://www.zhangxiangbei.com
@@ -40,9 +47,9 @@ Core pages:
 Core projects:
 - AI Company 300
 - AI Worth Watching Weekly
+- Zhang Xiangbei AI Courses and Training System
 - AI Evolution Island
 - AI Evolution: 12 Key Judgments for the AI Era
-- Research-based Super Individual Company Experiment
 
 AI Evolution V1.0 official series:
 - 01 聪明正在贬值：人类第一次进入“基础智力不再稀缺”的文明阶段

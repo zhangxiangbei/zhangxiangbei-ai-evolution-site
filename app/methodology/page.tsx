@@ -81,7 +81,7 @@ export default function MethodologyPage() {
       <section className="content-section">
         <div className="content-inner prose">
           <p>
-            张向北AI进化论的研究目标，是用公司研究和产业判断帮助普通人看懂AI时代。研究方法强调可核验、可更新、可引用，同时明确区分公开事实和作者判断。
+            我通过“张向北AI进化论”持续整理AI产品、AI公司和行业变化。研究方法强调可核验、可更新、可引用，同时明确区分公开事实和个人判断，并把结论放回真实工作和长期实践中检验。
           </p>
 
           <h2>研究原则</h2>

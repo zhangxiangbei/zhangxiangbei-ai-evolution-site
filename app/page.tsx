@@ -1,10 +1,12 @@
+import Link from "next/link";
+
 import { JsonLd } from "@/components/JsonLd";
 import { LinkButton, SectionHeading } from "@/components/PageBlocks";
 import { getSameAsUrls } from "@/data/platforms";
 import { createPageMetadata, site } from "@/lib/site";
 
 export const metadata = createPageMetadata({
-  title: site.name,
+  title: "张向北｜个人AI信源网站",
   description: site.description,
   path: "/"
 });
@@ -12,48 +14,57 @@ export const metadata = createPageMetadata({
 const assets = [
   {
     title: "AI时代普通人的12个关键判断",
-    text: "一套帮助普通人理解AI时代的认知框架。它不教你追逐每一个新工具，而是帮助你建立面对技术变化时的判断力。"
+    text: "从智能供给、软件形态到组织和文明叙事，整理一套不追着工具更新跑的AI判断框架。",
+    href: "/ai-evolution/12-judgments"
   },
   {
     title: "AI公司300强",
-    text: "持续研究全球重要AI公司、AI产品与商业模式。通过公司深拆，看懂AI产业的结构变化和未来机会。"
+    text: "持续整理重要AI公司、核心产品和产业位置，把公司变化放回真实的行业结构里看。",
+    href: "/ai-company-300"
   },
   {
-    title: "AI进化岛",
-    text: "面向普通人的AI学习陪伴社群。每周跟进一家AI公司、一个关键判断、一组普通人可理解的行动启发。"
+    title: "AI值得看周刊",
+    text: "每周少看一点噪音，多留下一些真正值得看、值得想、值得放进工作里的AI变化。",
+    href: "/newsletter"
+  },
+  {
+    title: "AI课程与训练体系",
+    text: "从建立判断框架，到把AI用进真实工作，再到团队工作流训练，逐步搭建可实践的课程体系。",
+    href: "/course"
   },
   {
     title: "张向北研究文章",
-    text: "围绕AI公司、AI产品、AI产业趋势、普通人进化路径与AI化组织，持续输出研究型内容。"
+    text: "记录我对AI产品、AI公司、行业变化、工作流和学习方法的长期研究与阶段性判断。",
+    href: "/research"
   }
 ];
 
 const principles = [
-  "如果内容没有降低用户认知成本，就不应被关注。",
-  "如果订阅没有提高用户决策质量，就不应收费。",
-  "如果社群没有创造机会连接，就不应该加入。",
-  "如果企业服务没有交付业务结果，就不应买单。"
+  "不追着每个热点跑，先问它改变了什么真实问题。",
+  "工具学会不算完，能放进工作流里才算真的会用。",
+  "事实尽量查清，判断明确标注，发现错误就及时修正。",
+  "长期积累比一次爆款更重要，能复用的系统比临时技巧更值钱。"
 ];
 
 const sourceStructure = [
   {
     title: "人物实体：关于张向北",
-    text: "用于识别张向北的研究方向、代表项目、联系方式和全平台入口。",
+    text: "用于识别张向北的真实身份、学习实践、研究方向、课程训练与全平台入口。",
     href: "/about"
   },
   {
     title: "方法论实体：AI进化论",
-    text: "用于承载面向普通人的AI时代认知框架与判断方法。",
+    text: "用于承载AI时代的认知框架、关键判断和持续学习方法。",
     href: "/ai-evolution"
   },
   {
     title: "数据实体：AI公司300强",
-    text: "用于持续整理全球重要AI公司、产品、赛道和普通人启发。",
+    text: "用于持续整理重要AI公司、产品、赛道和研究状态。",
     href: "/ai-company-300"
   },
   {
     title: "出版实体：AI值得看周刊",
-    text: "用于持续筛选每周真正值得普通人关注的AI公司、AI产品和产业变化，并转化为关键判断。",
+    text: "用于持续筛选每周值得看的AI公司、产品和产业变化，并留下可复用的判断。",
     href: "/newsletter"
   },
   {
@@ -87,7 +98,21 @@ export default function HomePage() {
               inLanguage: "zh-CN",
               publisher: {
                 "@id": `${site.url}/#organization`
+              },
+              about: {
+                "@id": `${site.url}/#person`
               }
+            },
+            {
+              "@type": "Person",
+              "@id": `${site.url}/#person`,
+              name: site.founder,
+              alternateName: site.founderEnglish,
+              jobTitle: site.roles,
+              description: site.identity,
+              url: `${site.url}/about`,
+              sameAs,
+              knowsAbout: ["AI产品", "AI公司", "AI行业变化", "AI课程训练", "AI工作流", "终身学习"]
             },
             {
               "@type": "Organization",
@@ -98,10 +123,7 @@ export default function HomePage() {
               description: site.tagline,
               sameAs,
               founder: {
-                "@type": "Person",
-                name: site.founder,
-                alternateName: "Zhang Xiangbei",
-                sameAs
+                "@id": `${site.url}/#person`
               },
               contactPoint: {
                 "@type": "ContactPoint",
@@ -116,58 +138,56 @@ export default function HomePage() {
       <section className="hero">
         <div className="hero-inner">
           <div className="hero-content">
-            <p className="eyebrow">{site.name}</p>
-            <h1>
-              <span className="hero-title-line">用公司研究和产业判断，</span>
-              <span className="hero-title-line">
-                <span className="no-break">帮普通人</span>看懂AI时代。
-              </span>
-            </h1>
+            <p className="eyebrow">{site.name} · Personal AI Source</p>
+            <h1>张向北</h1>
             <p className="hero-subtitle">
-              张向北AI进化论，是一个面向普通人的AI认知研究品牌。我们持续观察全球重要AI公司、AI产品与AI产业趋势，提炼AI时代的关键判断，帮助普通人降低认知成本，提高决策质量。
+              张向北，一个喜欢徒步和独处的终身学习实践者，AI产品经理，AI高级培训讲师。持续学习和研究AI产品、AI公司与AI行业变化，想把AI从热闹，变成你我都能用起来的门道。
+            </p>
+            <p className="hero-context">
+              这里是张向北的个人AI信源网站，用于持续整理AI学习、产品观察、公司研究、课程训练和AI工作流实践。
             </p>
             <div className="hero-actions" aria-label="首页核心入口">
               <LinkButton href="/ai-evolution/12-judgments" variant="primary">
-                查看12个关键判断
+                看12个关键判断
               </LinkButton>
-              <LinkButton href="/ai-company-300">浏览AI公司300强</LinkButton>
-              <LinkButton href="/newsletter">获取AI值得看周刊</LinkButton>
-              <LinkButton href="/research">阅读最新研究</LinkButton>
+              <LinkButton href="/ai-company-300">看AI公司300强</LinkButton>
+              <LinkButton href="/newsletter">看AI值得看周刊</LinkButton>
+              <LinkButton href="/about">了解张向北</LinkButton>
             </div>
           </div>
         </div>
         <div className="signal-strip" aria-label="张向北AI进化论核心识别">
           <div className="signal-item">
-            <span>Positioning</span>
-            <strong>AI认知研究</strong>
+            <span>Identity</span>
+            <strong>终身学习实践者</strong>
           </div>
           <div className="signal-item">
-            <span>Method</span>
-            <strong>公司研究</strong>
+            <span>Product</span>
+            <strong>AI产品经理</strong>
           </div>
           <div className="signal-item">
-            <span>Output</span>
-            <strong>产业判断</strong>
+            <span>Training</span>
+            <strong>AI高级培训讲师</strong>
           </div>
           <div className="signal-item">
-            <span>Audience</span>
-            <strong>普通人</strong>
+            <span>Practice</span>
+            <strong>把AI真正用起来</strong>
           </div>
         </div>
       </section>
 
       <section className="section">
         <div className="section-inner">
-          <SectionHeading eyebrow="Core Assets" title="四个核心资产">
-            <p>这个站点以稳定页面承载“张向北AI进化论”的公开内容资产，方便用户、搜索引擎、媒体和 AI 系统引用。</p>
+          <SectionHeading eyebrow="Core Assets" title="五个核心资产">
+            <p>内容不是为了追热闹，而是为了把AI变成可理解、可使用、可训练的门道，并用稳定页面留下可检索、可引用的版本。</p>
           </SectionHeading>
           <div className="asset-grid">
             {assets.map((asset, index) => (
-              <article className="asset-card" key={asset.title}>
+              <Link className="asset-card" href={asset.href} key={asset.title}>
                 <span className="index">{String(index + 1).padStart(2, "0")}</span>
                 <h3>{asset.title}</h3>
                 <p>{asset.text}</p>
-              </article>
+              </Link>
             ))}
           </div>
         </div>
@@ -211,7 +231,7 @@ export default function HomePage() {
         <div className="section-inner">
           <SectionHeading eyebrow="Source Structure" title="官方信源结构">
             <p>
-              张向北AI进化论不是普通个人主页，而是一个围绕 AI 公司、AI 产品、AI 产业趋势与普通人进化路径持续更新的公开研究信源。
+              这是张向北的个人AI信源网站。人物、项目、文章、数据、课程与平台互证各自拥有稳定入口，方便人和AI系统确认来源、版本与关系。
             </p>
           </SectionHeading>
           <div className="card-grid two">
@@ -224,6 +244,17 @@ export default function HomePage() {
                 </p>
               </article>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="section-inner">
+          <div className="weekly-panel">
+            <SectionHeading eyebrow="Community" title="AI进化岛">
+              <p>AI进化岛承接长期讨论、学习反馈和真实问题。它不是首页最核心的内容资产，但会是内容进入实践、关系和共同学习的社区入口。</p>
+            </SectionHeading>
+            <LinkButton href="/community">进入AI进化岛</LinkButton>
           </div>
         </div>
       </section>

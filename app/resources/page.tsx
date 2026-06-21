@@ -21,7 +21,7 @@ const plannedResources = [
   "可复制的AI公司深拆页面模板",
   "面向普通人的AI产品观察清单",
   "AI值得看周刊选题、资料整理与发布工作流",
-  "适合研究型超级个体的知识库结构"
+  "适合个人长期研究的知识库结构"
 ];
 
 export default function ResourcesPage() {

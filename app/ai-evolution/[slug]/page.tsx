@@ -79,10 +79,10 @@ export default async function AiEvolutionArticlePage({ params }: PageProps) {
               "@type": "Person",
               "@id": personId,
               name: site.founder,
-              alternateName: "Zhang Xiangbei",
-              jobTitle: "AI认知研究者",
+              alternateName: site.founderEnglish,
+              jobTitle: site.roles,
               url: absoluteUrl("/about"),
-              description: "张向北，AI认知研究者，专注AI公司、AI产品、AI产业趋势与普通人的AI进化路径。",
+              description: site.identity,
               sameAs
             },
             {

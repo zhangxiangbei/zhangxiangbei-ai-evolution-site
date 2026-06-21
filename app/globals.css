@@ -255,6 +255,14 @@ main {
   line-height: 1.85;
 }
 
+.hero-context {
+  max-width: 760px;
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.75;
+}
+
 .hero-actions,
 .cta-actions {
   display: flex;
@@ -390,8 +398,15 @@ main {
 .asset-grid,
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
   gap: 16px;
+}
+
+.asset-grid {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.card-grid {
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .card-grid.two {
@@ -412,6 +427,13 @@ main {
   display: grid;
   align-content: start;
   min-height: 260px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.asset-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(0, 116, 74, 0.35);
 }
 
 .asset-card .index,
@@ -430,6 +452,10 @@ main {
   font-size: 21px;
   line-height: 1.28;
   letter-spacing: 0;
+}
+
+.asset-card h3 {
+  font-size: 19px;
 }
 
 .asset-card p,

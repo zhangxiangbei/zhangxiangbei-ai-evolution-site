@@ -40,7 +40,7 @@ export default function TwelveJudgmentsPage() {
               "@id": `${absoluteUrl("/ai-evolution/12-judgments")}#collection`,
               name: "AI进化论：AI时代的12个关键判断",
               description:
-                "一套围绕AI时代系统性变化展开的判断框架，帮助普通人、创业者和企业主理解智能、软件、公司、组织、个体与文明叙事如何被重排。",
+                "一套围绕AI时代系统性变化展开的判断框架，用于理解智能、软件、公司、组织、个体与文明叙事如何被重排。",
               url: absoluteUrl("/ai-evolution/12-judgments"),
               inLanguage: "zh-CN",
               isPartOf: {
@@ -186,4 +186,3 @@ export default function TwelveJudgmentsPage() {
     </div>
   );
 }
-

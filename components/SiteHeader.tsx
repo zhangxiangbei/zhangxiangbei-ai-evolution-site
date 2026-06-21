@@ -10,7 +10,7 @@ export function SiteHeader() {
         </span>
         <span className="brand-text">
           <span>{site.name}</span>
-          <small>AI cognition source</small>
+          <small>Personal AI source</small>
         </span>
       </Link>
       <div className="header-actions">

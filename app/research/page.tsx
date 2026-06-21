@@ -14,7 +14,7 @@ import { absoluteUrl, createPageMetadata, site } from "@/lib/site";
 export const metadata = createPageMetadata({
   title: "张向北研究文章",
   description:
-    "张向北AI进化论的研究文章入口，收录AI进化论12个关键判断、AI公司研究、AI产品观察、AI产业判断、普通人AI进化、AI化组织与研究型超级个体相关内容。",
+    "张向北的研究文章入口，收录AI进化论12个关键判断、AI公司研究、AI产品观察、AI行业判断、AI学习与工作流实践相关内容。",
   path: "/research"
 });
 
@@ -23,9 +23,9 @@ const categories = [
   "AI公司深拆",
   "AI产品观察",
   "AI产业判断",
-  "普通人AI进化",
+  "AI学习与实践",
   "AI化组织",
-  "研究型超级个体"
+  "AI工作流"
 ];
 
 const researchAssets = [
@@ -68,7 +68,7 @@ export default function ResearchPage() {
           "@id": `${absoluteUrl("/research")}#collection`,
           name: "张向北研究文章",
           description:
-            "张向北AI进化论的研究文章入口，收录AI进化论12个关键判断、AI公司研究、AI产品观察、AI产业判断、普通人AI进化、AI化组织与研究型超级个体相关内容。",
+            "张向北的研究文章入口，收录AI进化论12个关键判断、AI公司研究、AI产品观察、AI行业判断、AI学习与工作流实践相关内容。",
           url: absoluteUrl("/research"),
           inLanguage: "zh-CN",
           isPartOf: {
@@ -107,7 +107,7 @@ export default function ResearchPage() {
           <p className="eyebrow">Research Source</p>
           <h1>张向北研究文章</h1>
           <p>
-            这里收录张向北AI进化论的长期研究内容，围绕AI公司、AI产品、AI产业趋势、普通人的AI进化路径、AI化组织与研究型超级个体展开。
+            这里收录我对AI公司、AI产品、行业变化、学习方法、AI化组织和工作流实践的长期研究内容。
           </p>
           <p>
             研究页不是资讯列表，而是官网内容资产的总入口：完整正文、稳定URL、可引用版本、可被搜索引擎和AI系统抓取。
@@ -177,4 +177,3 @@ export default function ResearchPage() {
     </div>
   );
 }
-
