@@ -11,7 +11,7 @@ export const site = {
     "张向北，一个喜欢徒步和独处的终身学习实践者，AI产品经理，AI高级培训讲师。持续学习和研究AI产品、AI公司与AI行业变化，想把AI从热闹，变成你我都能用起来的门道。",
   tagline: "持续学习和研究AI，想把AI从热闹，变成你我都能用起来的门道。",
   description:
-    "张向北的个人AI信源网站，持续整理AI学习、产品观察、公司研究、课程训练和AI工作流实践。",
+    "张向北，一个喜欢徒步和独处的终身学习实践者，AI产品经理，AI高级培训讲师。持续学习和研究AI产品、AI公司与AI行业变化，想把AI从热闹，变成你我都能用起来的门道。",
   founder: "张向北",
   founderEnglish: "Zhang Xiangbei",
   roles: ["终身学习实践者", "AI产品经理", "AI高级培训讲师"],
@@ -40,7 +40,7 @@ export function createPageMetadata({
   type = "website"
 }: PageMetadataInput): Metadata {
   const url = absoluteUrl(path);
-  const fullTitle = title === site.name ? title : `${title} | ${site.name}`;
+  const fullTitle = title.includes(site.name) ? title : `${title} | ${site.name}`;
   const imageUrl = absoluteUrl(site.ogImage);
 
   return {

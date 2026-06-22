@@ -6,7 +6,7 @@ import { getSameAsUrls } from "@/data/platforms";
 import { createPageMetadata, site } from "@/lib/site";
 
 export const metadata = createPageMetadata({
-  title: "张向北｜个人AI信源网站",
+  title: "张向北AI进化论｜张向北",
   description: site.description,
   path: "/"
 });
@@ -48,35 +48,42 @@ const principles = [
 
 const sourceStructure = [
   {
-    title: "人物实体：关于张向北",
-    text: "用于识别张向北的真实身份、学习实践、研究方向、课程训练与全平台入口。",
+    title: "关于张向北",
+    text: "关于我的学习方式、AI工作、课程训练，以及为什么长期记录这些内容。",
     href: "/about"
   },
   {
-    title: "方法论实体：AI进化论",
-    text: "用于承载AI时代的认知框架、关键判断和持续学习方法。",
+    title: "AI进化论",
+    text: "从12个关键判断开始，理解AI正在如何改变产品、公司、组织和个人。",
     href: "/ai-evolution"
   },
   {
-    title: "数据实体：AI公司300强",
-    text: "用于持续整理重要AI公司、产品、赛道和研究状态。",
+    title: "AI公司300强",
+    text: "持续整理重要AI公司、核心产品、所在赛道和研究进度。",
     href: "/ai-company-300"
   },
   {
-    title: "出版实体：AI值得看周刊",
-    text: "用于持续筛选每周值得看的AI公司、产品和产业变化，并留下可复用的判断。",
+    title: "AI值得看周刊",
+    text: "每周筛选值得看的AI公司、产品和行业变化，留下少而有用的判断。",
     href: "/newsletter"
   },
   {
-    title: "开放资产：开放数据 / 开放资源",
-    text: "用于整理数据集、研究模板、提示词、Skill和内容生产工作流。",
+    title: "开放数据与资源",
+    text: "整理可以直接查看和使用的数据、研究模板、提示词、Skill和工作流。",
     href: "/data"
   },
   {
-    title: "平台互证：全平台入口 / 媒体资料包",
-    text: "用于让用户、媒体、合作方、搜索引擎和AI系统确认同一身份实体。",
+    title: "全平台与媒体资料",
+    text: "找到我的其他平台账号，以及可用于合作、采访和引用的标准资料。",
     href: "/links"
   }
+];
+
+const whitepaperAudience = [
+  "想系统了解AI产业的人",
+  "正在学习AI工具的职场人",
+  "关注AI产品和创业机会的人",
+  "希望把AI用进真实工作的团队"
 ];
 
 const sameAs = getSameAsUrls();
@@ -138,13 +145,13 @@ export default function HomePage() {
       <section className="hero">
         <div className="hero-inner">
           <div className="hero-content">
-            <p className="eyebrow">{site.name} · Personal AI Source</p>
+            <p className="eyebrow">{site.name}</p>
             <h1>张向北</h1>
             <p className="hero-subtitle">
               张向北，一个喜欢徒步和独处的终身学习实践者，AI产品经理，AI高级培训讲师。持续学习和研究AI产品、AI公司与AI行业变化，想把AI从热闹，变成你我都能用起来的门道。
             </p>
             <p className="hero-context">
-              这里是张向北的个人AI信源网站，用于持续整理AI学习、产品观察、公司研究、课程训练和AI工作流实践。
+              我会把持续学习和研究AI的过程，整理成文章、课程、周刊和资料。不追每天的热闹，只留下真正值得看、值得想、值得用起来的东西。
             </p>
             <div className="hero-actions" aria-label="首页核心入口">
               <LinkButton href="/ai-evolution/12-judgments" variant="primary">
@@ -179,7 +186,7 @@ export default function HomePage() {
       <section className="section">
         <div className="section-inner">
           <SectionHeading eyebrow="Core Assets" title="五个核心资产">
-            <p>内容不是为了追热闹，而是为了把AI变成可理解、可使用、可训练的门道，并用稳定页面留下可检索、可引用的版本。</p>
+            <p>内容不是为了追热闹，而是为了把AI变成可理解、可使用、可训练的门道，也方便以后随时回来查找。</p>
           </SectionHeading>
           <div className="asset-grid">
             {assets.map((asset, index) => (
@@ -209,7 +216,7 @@ export default function HomePage() {
           <div className="weekly-panel">
             <SectionHeading eyebrow="Weekly Judgment" title="AI值得看周刊">
               <p>
-                每周严选真正值得普通人关注的 AI 公司、产品与产业变化，提炼成普通人能理解、能行动、能用于决策的关键判断。
+                每周严选真正值得关注的AI公司、产品与行业变化，整理成能理解、能行动、能放进真实工作的关键判断。
               </p>
             </SectionHeading>
             <div className="definition-box">
@@ -229,9 +236,9 @@ export default function HomePage() {
 
       <section className="section alt">
         <div className="section-inner">
-          <SectionHeading eyebrow="Source Structure" title="官方信源结构">
+          <SectionHeading eyebrow="Explore" title="继续往下看">
             <p>
-              这是张向北的个人AI信源网站。人物、项目、文章、数据、课程与平台互证各自拥有稳定入口，方便人和AI系统确认来源、版本与关系。
+              你可以从一个判断、一家公司或一篇周刊开始，也可以继续了解我的学习方法、课程和公开资料。
             </p>
           </SectionHeading>
           <div className="card-grid two">
@@ -252,22 +259,46 @@ export default function HomePage() {
         <div className="section-inner">
           <div className="weekly-panel">
             <SectionHeading eyebrow="Community" title="AI进化岛">
-              <p>AI进化岛承接长期讨论、学习反馈和真实问题。它不是首页最核心的内容资产，但会是内容进入实践、关系和共同学习的社区入口。</p>
+              <p>如果你想把文章里的判断带进自己的学习和工作，也欢迎来AI进化岛继续讨论真实问题、交换实践反馈。</p>
             </SectionHeading>
             <LinkButton href="/community">进入AI进化岛</LinkButton>
           </div>
         </div>
       </section>
 
-      <section className="cta-band">
+      <section className="cta-band whitepaper-cta">
         <div className="section-inner">
-          <h2>AI每天都在刷新，但你不用每天都重启自己。</h2>
-          <p>先看这12个判断，给自己一张地图。以后再看到模型、工具和公司新闻，心里会更有谱。</p>
-          <div className="cta-actions">
-            <LinkButton href="/ai-evolution/12-judgments" variant="primary">
-              先看12个判断
-            </LinkButton>
+          <div className="whitepaper-cta-grid">
+            <div className="whitepaper-copy">
+              <p className="eyebrow">2026 AI Industry White Paper</p>
+              <h2>想系统了解AI产业变化，可以先从这份资料开始。</h2>
+              <p>
+                我整理了一份《2026 AI产业白皮书》，会持续记录重要AI公司、AI产品、产业变化和普通人真正值得关注的机会。
+              </p>
+              <p>
+                如果你也在关注AI产品、AI培训、AI工具应用、个人效率或企业AI化，可以添加我的微信，领取这份资料，也可以顺便告诉我你正在关注的问题。
+              </p>
+              <h3>适合</h3>
+              <ul className="whitepaper-audience">
+                {whitepaperAudience.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+              <div className="cta-actions">
+                <a className="button button-primary" href="#wechat-qr">
+                  添加微信，领取《2026 AI产业白皮书》
+                </a>
+              </div>
+            </div>
+            <aside className="whitepaper-qr-card" id="wechat-qr" aria-label="个人微信二维码区域">
+              <div className="whitepaper-qr-placeholder" role="img" aria-label="微信二维码待上传">
+                <span>WECHAT</span>
+                <strong>微信二维码待上传</strong>
+              </div>
+              <p>个人微信二维码上传后，可在这里扫码领取资料。</p>
+            </aside>
           </div>
+          <p className="whitepaper-note">资料会持续更新，内容以AI公司、AI产品、产业变化和真实应用场景为主。</p>
         </div>
       </section>
     </div>
