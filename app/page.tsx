@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 import { JsonLd } from "@/components/JsonLd";
 import { LinkButton, SectionHeading } from "@/components/PageBlocks";
@@ -291,11 +292,16 @@ export default function HomePage() {
               </div>
             </div>
             <aside className="whitepaper-qr-card" id="wechat-qr" aria-label="个人微信二维码区域">
-              <div className="whitepaper-qr-placeholder" role="img" aria-label="微信二维码待上传">
-                <span>WECHAT</span>
-                <strong>微信二维码待上传</strong>
+              <div className="whitepaper-qr-media">
+                <Image
+                  src="/images/personal-wechat-qr.jpg"
+                  alt="张向北个人微信二维码"
+                  width={888}
+                  height={1131}
+                  sizes="(max-width: 620px) calc(100vw - 66px), 273px"
+                />
               </div>
-              <p>个人微信二维码上传后，可在这里扫码领取资料。</p>
+              <p>用微信扫码添加我，备注“白皮书”，领取《2026 AI产业白皮书》。</p>
             </aside>
           </div>
           <p className="whitepaper-note">资料会持续更新，内容以AI公司、AI产品、产业变化和真实应用场景为主。</p>

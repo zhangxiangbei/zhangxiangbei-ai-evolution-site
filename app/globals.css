@@ -579,37 +579,18 @@ main {
   box-shadow: var(--shadow);
 }
 
-.whitepaper-qr-placeholder {
-  display: grid;
-  place-items: center;
-  aspect-ratio: 1;
+.whitepaper-qr-media {
+  overflow: hidden;
   width: 100%;
-  min-height: 220px;
-  padding: 22px;
-  border: 1px dashed rgba(0, 116, 74, 0.46);
+  border: 1px solid rgba(17, 20, 17, 0.1);
   border-radius: var(--radius);
-  background:
-    linear-gradient(rgba(255, 255, 255, 0.74), rgba(255, 255, 255, 0.74)),
-    repeating-linear-gradient(0deg, rgba(0, 116, 74, 0.12) 0 1px, transparent 1px 22px),
-    repeating-linear-gradient(90deg, rgba(0, 116, 74, 0.12) 0 1px, transparent 1px 22px);
-  text-align: center;
+  background: #fff;
 }
 
-.whitepaper-qr-placeholder span,
-.whitepaper-qr-placeholder strong {
+.whitepaper-qr-media img {
   display: block;
-}
-
-.whitepaper-qr-placeholder span {
-  color: var(--green-dark);
-  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
-  font-size: 12px;
-}
-
-.whitepaper-qr-placeholder strong {
-  margin-top: 10px;
-  color: var(--black);
-  font-size: 18px;
+  width: 100%;
+  height: auto;
 }
 
 .whitepaper-note {
