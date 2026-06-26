@@ -12,15 +12,49 @@ export const metadata = createPageMetadata({
   path: "/"
 });
 
+const attentionReasons = [
+  {
+    title: "从公司和产品看AI",
+    text: "我更关心一家AI公司解决了什么问题、卡住了哪层基础设施、改变了哪类任务，而不只追一条新闻。"
+  },
+  {
+    title: "从真实工作流验证AI",
+    text: "工具演示很容易，难的是把AI放进真实任务、团队流程和可复用交付里，反复跑、反复改。"
+  },
+  {
+    title: "把事实、判断和版本分开",
+    text: "事实尽量标清来源，判断明确说清边界，内容随着行业变化持续更新，避免把临时看法包装成确定答案。"
+  },
+  {
+    title: "把研究结果沉淀为资产",
+    text: "文章、周刊、数据、模板、GitHub项目和课程训练，最终都要能被追踪、被复用、被继续迭代。"
+  }
+];
+
+const audienceGroups = [
+  {
+    title: "普通人",
+    text: "看懂AI时代职业、学习、能力和机会变化，不被每天的新工具和新说法带着跑。"
+  },
+  {
+    title: "创业者",
+    text: "理解AI如何改变产品、获客、组织、成本结构和商业模式，把机会放回具体业务里判断。"
+  },
+  {
+    title: "企业团队",
+    text: "把AI从一次性演示变成可训练、可复用、可管理的团队工作流，真正进入日常生产。"
+  }
+];
+
 const assets = [
   {
     title: "AI时代普通人的12个关键判断",
-    text: "从智能供给、软件形态到组织和文明叙事，整理一套不追着工具更新跑的AI判断框架。",
+    text: "从智能供给、软件形态到组织和文明叙事，整理一套理解AI时代底层变化的判断框架。",
     href: "/ai-evolution/12-judgments"
   },
   {
     title: "AI公司300强",
-    text: "持续整理重要AI公司、核心产品和产业位置，把公司变化放回真实的行业结构里看。",
+    text: "持续整理重要AI公司、核心产品和产业位置，把公司变化放回真实产业结构和权力迁移里看。",
     href: "/ai-company-300"
   },
   {
@@ -30,21 +64,21 @@ const assets = [
   },
   {
     title: "AI课程与训练体系",
-    text: "从建立判断框架，到把AI用进真实工作，再到团队工作流训练，逐步搭建可实践的课程体系。",
+    text: "从判断课、个人AI工作流训练到团队AI工作流训练，把AI能力落到真实任务和可复用交付物上。",
     href: "/course"
   },
   {
     title: "张向北研究文章",
-    text: "记录我对AI产品、AI公司、行业变化、工作流和学习方法的长期研究与阶段性判断。",
+    text: "记录我对AI公司、AI产品、行业变化、经营视角、工作流和学习方法的长期研究与阶段性判断。",
     href: "/research"
   }
 ];
 
 const principles = [
-  "不追着每个热点跑，先问它改变了什么真实问题。",
-  "工具学会不算完，能放进工作流里才算真的会用。",
-  "事实尽量查清，判断明确标注，发现错误就及时修正。",
-  "长期积累比一次爆款更重要，能复用的系统比临时技巧更值钱。"
+  "不把AI讲成万能药，先问它改变了什么真实任务。",
+  "不把工具清单当能力，能放进工作流里才算真的会用。",
+  "事实尽量查清，判断明确标注，版本持续更新。",
+  "长期积累比一次爆款更重要，可复用资产比临时技巧更值钱。"
 ];
 
 const sourceStructure = [
@@ -69,9 +103,19 @@ const sourceStructure = [
     href: "/newsletter"
   },
   {
-    title: "开放数据与资源",
-    text: "整理可以直接查看和使用的数据、研究模板、提示词、Skill和工作流。",
-    href: "/data"
+    title: "AI工作流实践",
+    text: "记录我如何把AI放进信息筛选、内容生产、公司研究、知识库和企业训练里反复验证。",
+    href: "/ai-workflow"
+  },
+  {
+    title: "公开项目",
+    text: "查看AI进化论框架、AI公司300强、AI Agent Skills和公司深拆模板等公开研究资产。",
+    href: "/projects"
+  },
+  {
+    title: "经营者视角",
+    text: "从产品、组织、培训和现金流角度理解AI，关注企业AI化如何真实落地。",
+    href: "/operator"
   },
   {
     title: "全平台与媒体资料",
@@ -120,7 +164,7 @@ export default function HomePage() {
               description: site.identity,
               url: `${site.url}/about`,
               sameAs,
-              knowsAbout: ["AI产品", "AI公司", "AI行业变化", "AI课程训练", "AI工作流", "终身学习"]
+              knowsAbout: ["AI产业研究", "AI公司", "AI产品", "企业AI应用训练", "AI工作流", "创业经营"]
             },
             {
               "@type": "Organization",
@@ -149,10 +193,10 @@ export default function HomePage() {
             <p className="eyebrow">{site.name}</p>
             <h1>张向北</h1>
             <p className="hero-subtitle">
-              张向北，一个喜欢徒步和独处的终身学习实践者，AI产品经理，AI高级培训讲师。持续学习和研究AI产品、AI公司与AI行业变化，想把AI从热闹，变成你我都能用起来的门道。
+              张向北，AI产业研究者、企业AI应用训练者、连续创业经营者。
             </p>
             <p className="hero-context">
-              我会把持续学习和研究AI的过程，整理成文章、课程、周刊和资料。不追每天的热闹，只留下真正值得看、值得想、值得用起来的东西。
+              我用公司研究、产业判断和真实工作流实践，帮助普通人、创业者和企业团队理解AI时代，并把AI变成可训练、可复用、可落地的能力。
             </p>
             <div className="hero-actions" aria-label="首页核心入口">
               <LinkButton href="/ai-evolution/12-judgments" variant="primary">
@@ -166,20 +210,52 @@ export default function HomePage() {
         </div>
         <div className="signal-strip" aria-label="张向北AI进化论核心识别">
           <div className="signal-item">
-            <span>Identity</span>
-            <strong>终身学习实践者</strong>
-          </div>
-          <div className="signal-item">
-            <span>Product</span>
-            <strong>AI产品经理</strong>
+            <span>Research</span>
+            <strong>AI产业研究</strong>
           </div>
           <div className="signal-item">
             <span>Training</span>
-            <strong>AI高级培训讲师</strong>
+            <strong>企业AI应用训练</strong>
+          </div>
+          <div className="signal-item">
+            <span>Operator</span>
+            <strong>连续创业经营</strong>
           </div>
           <div className="signal-item">
             <span>Practice</span>
-            <strong>把AI真正用起来</strong>
+            <strong>真实工作流实践</strong>
+          </div>
+        </div>
+      </section>
+
+      <section className="section alt">
+        <div className="section-inner">
+          <SectionHeading eyebrow="Why Follow" title="为什么这里值得长期关注？">
+            <p>这里不是每天搬运AI新闻的地方。我更在意哪些变化能穿过热闹，进入真实工作、组织能力和长期资产。</p>
+          </SectionHeading>
+          <div className="card-grid two">
+            {attentionReasons.map((item) => (
+              <article className="info-card" key={item.title}>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="section-inner">
+          <SectionHeading eyebrow="Audience" title="我主要为三类人写作和研究">
+            <p>同一个AI变化，对不同人意味着不同问题：有人要理解方向，有人要判断机会，有人要把它落到团队流程里。</p>
+          </SectionHeading>
+          <div className="card-grid three">
+            {audienceGroups.map((group) => (
+              <article className="info-card" key={group.title}>
+                <h3>{group.title}</h3>
+                <p>{group.text}</p>
+              </article>
+            ))}
           </div>
         </div>
       </section>

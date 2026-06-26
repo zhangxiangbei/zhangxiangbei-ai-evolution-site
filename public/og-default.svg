@@ -11,8 +11,8 @@
   <text x="160" y="105" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="34" font-weight="800" fill="#111411">张向北AI进化论</text>
   <text x="160" y="136" font-family="Consolas, monospace" font-size="16" fill="#657066">ZHANG XIANGBEI AI EVOLUTION</text>
   <text x="72" y="278" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="82" font-weight="900" fill="#0b0d0b">张向北</text>
-  <text x="72" y="366" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="58" font-weight="900" fill="#0b0d0b">持续学习，把AI真正用起来</text>
-  <text x="72" y="454" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="27" fill="#394039">持续学习 · 产品观察 · 公司研究 · 课程训练 · AI工作流实践</text>
+  <text x="72" y="366" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="54" font-weight="900" fill="#0b0d0b">AI产业研究 · 企业AI训练</text>
+  <text x="72" y="454" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="27" fill="#394039">公司研究 · 产业判断 · 工作流实践 · 公开项目</text>
   <path d="M760 115 L1084 477" stroke="#00a66a" stroke-width="10" opacity="0.2"/>
   <path d="M708 482 L1118 112" stroke="#157f9d" stroke-width="3" opacity="0.22"/>
 </svg>

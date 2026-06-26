@@ -413,6 +413,10 @@ main {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.card-grid.three {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .asset-card,
 .info-card,
 .article-card {
@@ -1426,6 +1430,7 @@ main {
   .asset-grid,
   .card-grid,
   .card-grid.two,
+  .card-grid.three,
   .judgment-grid,
   .company-list,
   .platform-grid,
@@ -1493,6 +1498,7 @@ main {
   .asset-grid,
   .card-grid,
   .card-grid.two,
+  .card-grid.three,
   .judgment-grid,
   .company-list,
   .platform-grid,

@@ -4,22 +4,46 @@ import { getSameAsUrls } from "@/data/platforms";
 import { createPageMetadata, site } from "@/lib/site";
 
 export const metadata = createPageMetadata({
-  title: "张向北AI课程与训练体系",
-  description: "张向北围绕AI认知框架、真实工作应用和团队AI工作流持续搭建的课程与训练体系。",
+  title: "张向北AI训练体系",
+  description: "张向北围绕AI时代判断、个人AI工作流和团队AI工作流搭建的AI课程与训练体系。",
   path: "/course"
 });
 
-const learningPath = [
-  "先建立判断框架：知道AI正在改变什么，也知道什么不值得追。",
-  "再进入真实工作：围绕具体任务选择工具、拆解流程并完成交付。",
-  "最后形成工作流：把一次会用沉淀为个人或团队可以重复运行的系统。"
+const trainingTracks = [
+  {
+    index: "01",
+    title: "AI时代判断课：看懂AI时代",
+    problem: "解决每天看到很多AI新闻、工具和观点，却不知道哪些变化真正重要的问题。",
+    audience: "适合想建立长期判断框架的普通人、职场人、创作者、创业者和管理者。",
+    ability: "训练识别AI产业变化、判断公司和产品价值、理解组织与个人能力变化的能力。",
+    deliverable: "最终留下《AI进化论：AI时代的12个关键判断》这套可反复回看的认知框架。",
+    href: "/ai-evolution/12-judgments"
+  },
+  {
+    index: "02",
+    title: "个人AI工作流训练：把AI用进自己的真实工作",
+    problem: "解决学了很多工具，但没有形成稳定工作流、没有真正提高交付质量的问题。",
+    audience: "适合希望在研究、写作、内容、运营、学习和日常办公中用好AI的职场人和创作者。",
+    ability: "训练任务拆解、提示词设计、资料筛选、内容加工、复盘迭代和个人知识库沉淀能力。",
+    deliverable: "最终留下至少一套可重复运行的个人AI工作流，以及对应模板、提示词和复盘方法。",
+    href: "/ai-workflow"
+  },
+  {
+    index: "03",
+    title: "团队AI工作流训练：让团队真的用起来",
+    problem: "解决企业只做一次工具演示、员工各用各的、流程和知识没有被重新设计的问题。",
+    audience: "适合正在思考企业AI化、团队提效、内容生产、销售运营和知识管理的业务负责人。",
+    ability: "训练任务链拆解、团队知识库建设、权限与协作边界、质量检查和反馈机制设计能力。",
+    deliverable: "最终留下一套团队AI工作流原型，包括任务清单、流程模板、角色分工和迭代机制。",
+    href: "/operator"
+  }
 ];
 
-const coursePrinciples = [
+const trainingPrinciples = [
   "不以工具数量衡量学习成果。",
   "不脱离真实任务讲AI应用。",
   "不把演示效果当作工作结果。",
-  "每一轮训练都要留下方法、模板或工作流。"
+  "每一轮训练都要留下方法、模板、流程或可复用交付物。"
 ];
 
 const sameAs = getSameAsUrls();
@@ -34,13 +58,16 @@ export default function CoursePage() {
             {
               "@type": "CollectionPage",
               "@id": `${site.url}/course#collection`,
-              name: "张向北AI课程与训练体系",
-              description: "围绕AI认知框架、真实工作应用和团队AI工作流持续搭建的课程与训练体系。",
+              name: "张向北AI训练体系",
+              description: "围绕AI时代判断、个人AI工作流和团队AI工作流搭建的AI课程与训练体系。",
               url: `${site.url}/course`,
               inLanguage: "zh-CN",
-              mainEntity: {
-                "@id": `${site.url}/course#ai-evolution-course`
-              }
+              hasPart: trainingTracks.map((track) => ({
+                "@type": "Course",
+                name: track.title,
+                description: track.problem,
+                url: `${site.url}/course`
+              }))
             },
             {
               "@type": "Course",
@@ -70,50 +97,40 @@ export default function CoursePage() {
       <section className="page-hero">
         <div className="page-hero-inner">
           <p className="eyebrow">AI Courses & Training</p>
-          <h1>张向北AI课程与训练体系</h1>
-          <p>从认知框架到真实工作，再到团队AI工作流，逐步把“知道AI”变成“能把AI用起来”。</p>
+          <h1>张向北AI训练体系</h1>
+          <p>从看懂AI时代，到把AI用进个人真实工作，再到让团队形成可复用工作流。这里不是卖课清单，而是一套长期迭代的AI能力训练地图。</p>
         </div>
       </section>
 
       <section className="content-section">
         <div className="content-inner prose">
-          <h2>这不是一张卖课清单</h2>
-          <p>
-            我更愿意把这里做成一份长期课程地图。每门课都从真实问题出发：先理解变化，再完成任务，最后把方法沉淀成可以继续使用的工作流。
-          </p>
-
-          <h2>课程体系</h2>
-          <div className="card-grid two">
-            <article className="info-card">
-              <span className="index">01 · 认知基础课</span>
-              <h3>AI进化论——AI时代普通人的12个关键判断</h3>
-              <p>从智能供给、软件形态、公司组织、个人能力到文明叙事，建立理解AI时代变化的基础框架。</p>
-              <p>共12节短课。第一版筹备中，定价199元。</p>
-              <LinkButton href="/ai-evolution/12-judgments">先看12个判断</LinkButton>
-            </article>
-
-            <article className="info-card">
-              <span className="index">02 · 规划方向</span>
-              <h3>把AI用进真实工作</h3>
-              <p>面向职场人的AI应用课。围绕真实任务练习信息整理、研究分析、内容表达、方案协作和个人工作流，而不是堆积工具清单。</p>
-            </article>
-
-            <article className="info-card">
-              <span className="index">03 · 规划方向</span>
-              <h3>业务团队AI工作流入门</h3>
-              <p>面向团队和企业的AI训练课。从业务任务、流程拆解、知识沉淀和协作边界开始，建立第一套能跑起来的团队AI工作流。</p>
-            </article>
+          <h2>训练体系</h2>
+          <div className="article-list">
+            {trainingTracks.map((track) => (
+              <article className="article-card" key={track.title}>
+                <span className="index">{track.index}</span>
+                <h3>{track.title}</h3>
+                <dl className="meta-table">
+                  <dt>解决什么问题</dt>
+                  <dd>{track.problem}</dd>
+                  <dt>适合谁</dt>
+                  <dd>{track.audience}</dd>
+                  <dt>训练什么能力</dt>
+                  <dd>{track.ability}</dd>
+                  <dt>最终留下什么交付物</dt>
+                  <dd>{track.deliverable}</dd>
+                </dl>
+                <LinkButton href={track.href}>查看相关内容</LinkButton>
+              </article>
+            ))}
           </div>
 
-          <h2>学习路径</h2>
-          <SimpleList items={learningPath} />
-
           <h2>训练原则</h2>
-          <SimpleList items={coursePrinciples} />
+          <SimpleList items={trainingPrinciples} />
 
           <h2>当前状态</h2>
           <p>
-            第一门认知课正在准备中；另外两个方向仍处于课程研究和训练方案设计阶段。正式开放时，会在官网、公众号和全平台入口同步更新，不提前制造不存在的报名入口。
+            第一门判断课正在准备中；个人AI工作流训练和团队AI工作流训练正在根据真实工作场景持续打磨。正式开放时，会在官网、公众号和全平台入口同步更新。
           </p>
         </div>
       </section>

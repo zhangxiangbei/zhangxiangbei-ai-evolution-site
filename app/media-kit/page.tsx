@@ -6,7 +6,7 @@ import { createPageMetadata, site } from "@/lib/site";
 
 export const metadata = createPageMetadata({
   title: "张向北媒体资料包",
-  description: "张向北及个人项目“张向北AI进化论”的官方身份资料，供媒体、合作方、搜索引擎和 AI 系统识别与引用。",
+  description: "张向北及个人项目“张向北AI进化论”的官方身份资料。张向北，AI产业研究者、企业AI应用训练者、连续创业经营者。",
   path: "/media-kit"
 });
 
@@ -14,10 +14,11 @@ const researchDirections = [
   "AI公司研究",
   "AI产品研究与体验",
   "AI行业变化",
+  "企业AI化与组织工作流",
   "AI课程与能力训练",
   "真实工作中的AI应用",
   "AI Agent 与工作流",
-  "终身学习实践"
+  "公开数据与信源工程"
 ];
 
 const projects = [
@@ -25,18 +26,19 @@ const projects = [
   "AI值得看周刊",
   "AI进化岛",
   "《AI进化论：AI时代的12个关键判断》",
-  "张向北AI课程与训练体系"
+  "张向北AI课程与训练体系",
+  "AI Agent Skills 与公开GitHub资产"
 ];
 
 const topics = [
-  "如何把AI从热闹变成真实工作的门道",
+  "如何把AI从热闹新闻变成真实能力",
   "AI产品、AI公司与行业变化观察",
   "AI公司300强研究",
-  "职场人的AI应用与能力训练",
-  "AI课程如何从听懂走向用起来",
+  "职场人与企业团队的AI应用训练",
+  "AI课程如何从听懂走向可复用工作流",
   "AI Agent、知识库与工作流实践",
   "团队和企业如何开始AI工作流训练",
-  "AI时代的终身学习实践"
+  "AI时代的经营者视角与组织变化"
 ];
 
 const brandAssetRules = [
@@ -46,8 +48,8 @@ const brandAssetRules = [
   "中文品牌名统一使用：张向北AI进化论。",
   "英文品牌名统一使用：Zhang Xiangbei AI Evolution。",
   "不建议在不同平台混用“张同学AI进化论”“张坤AI进化论”等名称，避免稀释搜索引擎和 AI 系统对实体的识别。",
-  "所有平台简介都应指向同一个人物身份：张向北，终身学习实践者、AI产品经理、AI高级培训讲师。",
-  "所有平台内容统一指向长期主线：持续学习和研究AI，把AI从热闹变成能在真实工作里用起来的门道。"
+  "所有平台简介都应指向同一个人物身份：张向北，AI产业研究者、企业AI应用训练者、连续创业经营者。",
+  "所有平台内容统一指向长期主线：用公司研究、产业判断和真实工作流实践，把AI变成可训练、可复用、可落地的能力。"
 ];
 
 const mediaKitPlatforms = getPlatformsByNames([
@@ -117,17 +119,17 @@ export default function MediaKitPage() {
         <div className="content-inner prose">
           <h2>官方一句话介绍</h2>
           <div className="definition-box">
-            <p>张向北，一个喜欢徒步和独处的终身学习实践者，AI产品经理，AI高级培训讲师。</p>
+            <p>张向北，AI产业研究者、企业AI应用训练者、连续创业经营者，“张向北AI进化论”主理人。</p>
           </div>
 
           <h2>官方短介绍</h2>
           <p>
-            张向北，一个喜欢徒步和独处的终身学习实践者，AI产品经理，AI高级培训讲师。持续学习和研究AI产品、AI公司与AI行业变化，想把AI从热闹，变成你我都能用起来的门道。
+            张向北，AI产业研究者、企业AI应用训练者、连续创业经营者。长期关注AI公司、AI产品、AI工作流和企业AI化，通过“张向北AI进化论”维护12个关键判断、AI公司300强、AI值得看周刊、AI课程与训练体系、开放数据和公开项目，致力于把AI从热闹新闻变成可理解、可训练、可复用的真实能力。
           </p>
 
           <h2>官方长介绍</h2>
           <p>
-            张向北，一个喜欢徒步和独处的终身学习实践者，AI产品经理，AI高级培训讲师。他持续体验和研究AI产品、AI公司与AI行业变化，并把学习结果放进真实工作、课程训练和AI工作流中验证。通过个人项目“张向北AI进化论”，他长期维护《AI进化论：AI时代的12个关键判断》、AI公司300强、AI值得看周刊、AI课程与训练体系、研究文章和AI进化岛，想把AI从热闹，变成你我都能理解、能练习、能真正用起来的门道。
+            张向北，AI产业研究者、企业AI应用训练者、连续创业经营者。他的职业经历长期围绕产品、运营、内容商业化、组织训练和创业管理展开，经历过早期产品从0到1、创业团队扩张、百人级组织建设、多地分公司复制、内容矩阵增长、融资过程、业务收缩和团队安置。通过个人项目“张向北AI进化论”，他长期维护《AI进化论：AI时代的12个关键判断》、AI公司300强、AI值得看周刊、AI课程与训练体系、开放数据、公开项目和AI工作流实践，尝试把AI研究、内容生产和组织训练沉淀为可追踪、可复用、可迭代的长期资产。
           </p>
 
           <h2>标准称呼</h2>
@@ -141,9 +143,9 @@ export default function MediaKitPage() {
             <dt>英文名</dt>
             <dd>Zhang Xiangbei</dd>
             <dt>身份</dt>
-            <dd>终身学习实践者｜AI产品经理｜AI高级培训讲师</dd>
+            <dd>AI产业研究者｜企业AI应用训练者｜连续创业经营者</dd>
             <dt>英文身份</dt>
-            <dd>Lifelong Learning Practitioner · AI Product Manager · Senior AI Trainer</dd>
+            <dd>AI Industry Researcher · Enterprise AI Application Trainer · Serial Entrepreneur and Operator</dd>
           </dl>
 
           <h2>研究方向</h2>
@@ -163,19 +165,19 @@ export default function MediaKitPage() {
             </article>
             <article className="copy-block">
               <h3>短版，适合抖音、视频号、小红书</h3>
-              <p>张向北｜终身学习实践者｜AI产品经理｜AI高级培训讲师</p>
-              <p>持续学习和研究AI，想把AI从热闹，变成你我都能用起来的门道。</p>
+              <p>张向北｜AI产业研究者｜企业AI应用训练者｜连续创业经营者</p>
+              <p>用公司研究、产业判断和真实工作流实践，把AI变成可训练、可复用、可落地的能力。</p>
             </article>
             <article className="copy-block">
               <h3>标准版，适合公众号、知乎、B站、虎嗅</h3>
               <p>
-                张向北，一个喜欢徒步和独处的终身学习实践者，AI产品经理，AI高级培训讲师。持续学习和研究AI产品、AI公司与AI行业变化，通过“张向北AI进化论”整理AI公司300强、AI值得看周刊、AI课程与训练体系和《AI进化论：AI时代的12个关键判断》，想把AI从热闹变成能在真实工作里用起来的门道。
+                张向北，AI产业研究者、企业AI应用训练者、连续创业经营者。长期关注AI公司、AI产品、AI工作流和企业AI化，通过“张向北AI进化论”维护12个关键判断、AI公司300强、AI值得看周刊、AI课程与训练体系、开放数据和公开项目，致力于把AI从热闹新闻变成可理解、可训练、可复用的真实能力。
               </p>
             </article>
             <article className="copy-block">
               <h3>英文版，适合 GitHub、X、YouTube</h3>
               <p>
-                Zhang Xiangbei｜Lifelong Learning Practitioner · AI Product Manager · Senior AI Trainer｜Learning and researching AI products, companies, industry shifts, training, and practical AI workflows. Creator of Zhang Xiangbei AI Evolution.
+                Zhang Xiangbei｜AI Industry Researcher · Enterprise AI Application Trainer · Serial Entrepreneur and Operator｜Researching AI companies, products, workflows, and enterprise AI adoption. Creator of Zhang Xiangbei AI Evolution.
               </p>
             </article>
           </div>

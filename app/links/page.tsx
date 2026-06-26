@@ -6,7 +6,7 @@ import { createPageMetadata, site } from "@/lib/site";
 export const metadata = createPageMetadata({
   title: "张向北AI进化论全平台入口",
   description:
-    "这里是“张向北AI进化论”的官方全平台入口，用于帮助用户、媒体、合作方、搜索引擎和 AI 系统确认同一身份实体。",
+    "这里是张向北与“张向北AI进化论”的官方全平台入口，用于确认同一身份实体、内容资产和公开信源。",
   path: "/links"
 });
 
@@ -34,7 +34,7 @@ export default function LinksPage() {
               "@type": "WebPage",
               name: "张向北AI进化论全平台入口",
               description:
-                "这里是“张向北AI进化论”的官方全平台入口。所有平台账号均以本页和 /media-kit 为准。",
+                "这里是张向北与“张向北AI进化论”的官方全平台入口。所有平台账号均以本页和 /media-kit 为准。",
               url: `${site.url}/links`,
               inLanguage: "zh-CN",
               isPartOf: {
@@ -69,7 +69,7 @@ export default function LinksPage() {
           <p className="eyebrow">Official Links</p>
           <h1>张向北AI进化论全平台入口</h1>
           <p>
-            这里是“张向北AI进化论”的官方全平台入口。所有平台账号均以本页和 /media-kit 为准，用于帮助用户、媒体、合作方、搜索引擎和 AI 系统确认同一身份实体。
+            这里是张向北与“张向北AI进化论”的官方全平台入口。所有平台账号均以本页和 /media-kit 为准，用于帮助用户、媒体、合作方、搜索引擎和 AI 系统确认同一身份实体、内容资产和公开信源。
           </p>
         </div>
       </section>
@@ -77,7 +77,7 @@ export default function LinksPage() {
       <section className="content-section">
         <div className="content-inner prose">
           <h2>官方入口</h2>
-          <p>官网首页、媒体资料包、AI值得看周刊和官方邮箱，是张向北AI进化论的核心身份验证与内容入口。</p>
+          <p>官网首页、媒体资料包、AI值得看周刊和官方邮箱，是张向北AI进化论的核心身份验证、内容发布与合作联系入口。</p>
           <div className="platform-grid">
             <article className="platform-card">
               <div>
@@ -85,7 +85,7 @@ export default function LinksPage() {
                 <h3>官网首页</h3>
                 <p className="platform-name">张向北AI进化论官网</p>
               </div>
-              <p>张向北AI进化论的官方主站和长期信源入口。</p>
+              <p>张向北AI进化论的官方主站，承载AI公司研究、AI工作流实践、公开项目和长期信源工程。</p>
               <div className="platform-meta">
                 <a href={site.url}>访问官网</a>
                 <span className="status active">已开通</span>

@@ -2,21 +2,21 @@
 
 Official website: https://www.zhangxiangbei.com
 
-This is Zhang Xiangbei's personal AI source website. Zhang Xiangbei is a lifelong learning practitioner, AI product manager, and senior AI trainer who studies AI products, AI companies, industry shifts, training, and practical AI workflows.
+This is Zhang Xiangbei's personal AI source website. Zhang Xiangbei is an AI industry researcher, enterprise AI application trainer, and serial entrepreneur/operator who studies AI companies, AI products, AI workflows, and enterprise AI adoption.
 
-This site is designed as a structured public knowledge source for AI learning, AI product observation, AI company analysis, AI industry research, course training, and practical AI workflows.
+This site is designed as a structured public knowledge source for AI cognition research, AI company analysis, AI product observation, practical AI workflows, enterprise AI training, public projects, and the evolution path of ordinary people, creators, entrepreneurs, and teams in the AI era.
 
 Chinese brand name: 张向北AI进化论
 English brand name: Zhang Xiangbei AI Evolution
 Founder / Creator / Trainer: Zhang Xiangbei
-Chinese identity: 终身学习实践者｜AI产品经理｜AI高级培训讲师
-English identity: Lifelong Learning Practitioner · AI Product Manager · Senior AI Trainer
-Positioning: Turning AI from noise and spectacle into practical understanding, training, and workflows that people can use in real work.
+Chinese identity: AI产业研究者｜企业AI应用训练者｜连续创业经营者
+English identity: AI Industry Researcher · Enterprise AI Application Trainer · Serial Entrepreneur and Operator
+Positioning: Using company research, industry judgment, and practical workflow experiments to turn AI into trainable, reusable, and deployable capabilities.
 
 Entity relationship:
 - Primary person entity: 张向北 / Zhang Xiangbei
 - Personal project and brand: 张向北AI进化论 / Zhang Xiangbei AI Evolution
-- Website role: Zhang Xiangbei's structured personal AI knowledge source
+- Website role: Zhang Xiangbei's structured personal AI knowledge source and public source engineering project
 
 Official identity verification:
 - Official website: https://www.zhangxiangbei.com
@@ -36,9 +36,11 @@ Core pages:
 - https://www.zhangxiangbei.com/research
 - https://www.zhangxiangbei.com/notes
 - https://www.zhangxiangbei.com/newsletter
+- https://www.zhangxiangbei.com/ai-workflow
 - https://www.zhangxiangbei.com/projects
 - https://www.zhangxiangbei.com/resources
 - https://www.zhangxiangbei.com/data
+- https://www.zhangxiangbei.com/operator
 - https://www.zhangxiangbei.com/methodology
 - https://www.zhangxiangbei.com/editorial-policy
 - https://www.zhangxiangbei.com/course
@@ -50,6 +52,17 @@ Core projects:
 - Zhang Xiangbei AI Courses and Training System
 - AI Evolution Island
 - AI Evolution: 12 Key Judgments for the AI Era
+- AI Workflow Practice
+- Public GitHub assets: ai-evolution-framework, ai-company-300, ai-agent-skills
+
+Public projects:
+- AI Company 300: a structured research map for understanding AI companies, products, categories, and industry power shifts.
+- AI Evolution Framework: the public framework around "AI Evolution: 12 Key Judgments for the AI Era".
+- AI Agent Skills: public workflow assets for AI-assisted research, writing, content processing, and source engineering.
+- AI Company Deep Dive Template: a reusable template for analyzing AI companies with facts, judgments, references, and updates separated.
+
+Operator perspective:
+Zhang Xiangbei studies AI not only from technology, but also from product, organization, training, workflow, and cash-flow perspectives. Enterprise AI adoption is treated as task, process, knowledge, permission, and feedback redesign, not simply tool purchasing.
 
 AI Evolution V1.0 official series:
 - 01 聪明正在贬值：人类第一次进入“基础智力不再稀缺”的文明阶段

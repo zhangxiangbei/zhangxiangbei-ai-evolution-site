@@ -11,6 +11,8 @@ const footerLinks = [
   { href: "/links", label: "全平台入口" },
   { href: "/ai-evolution", label: "AI进化论" },
   { href: "/ai-company-300", label: "AI公司300强" },
+  { href: "/ai-workflow", label: "AI工作流实践" },
+  { href: "/operator", label: "经营者视角" },
   { href: "/course", label: "AI课程" },
   { href: "/community", label: "社群" },
   { href: "/notes", label: "AI观察笔记" },
