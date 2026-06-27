@@ -2,7 +2,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { NumberedList } from "@/components/PageBlocks";
 import { SourceInfo } from "@/components/SourceInfo";
 import { getSameAsUrls } from "@/data/platforms";
-import { createPageMetadata, site } from "@/lib/site";
+import { absoluteUrl, createPageMetadata, site } from "@/lib/site";
 
 export const metadata = createPageMetadata({
   title: "研究方法与判断框架",
@@ -60,6 +60,10 @@ export default function MethodologyPage() {
           author: {
             "@type": "Person",
             name: site.founder,
+            image: absoluteUrl(site.avatar.jpg),
+            url: site.url,
+            jobTitle: site.jobTitle,
+            description: site.personDescription,
             sameAs
           },
           publisher: {

@@ -1,6 +1,6 @@
 import { JsonLd } from "@/components/JsonLd";
 import { SimpleList } from "@/components/PageBlocks";
-import { createPageMetadata, site } from "@/lib/site";
+import { absoluteUrl, createPageMetadata, site } from "@/lib/site";
 
 export const metadata = createPageMetadata({
   title: "经营者视角",
@@ -41,7 +41,10 @@ export default function OperatorPage() {
           author: {
             "@type": "Person",
             name: site.founder,
-            url: `${site.url}/about`
+            image: absoluteUrl(site.avatar.jpg),
+            url: site.url,
+            jobTitle: site.jobTitle,
+            description: site.personDescription
           }
         }}
       />

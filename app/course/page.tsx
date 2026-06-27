@@ -1,7 +1,7 @@
 import { JsonLd } from "@/components/JsonLd";
 import { LinkButton, SimpleList } from "@/components/PageBlocks";
 import { getSameAsUrls } from "@/data/platforms";
-import { createPageMetadata, site } from "@/lib/site";
+import { absoluteUrl, createPageMetadata, site } from "@/lib/site";
 
 export const metadata = createPageMetadata({
   title: "张向北AI训练体系",
@@ -79,8 +79,10 @@ export default function CoursePage() {
               provider: {
                 "@type": "Person",
                 name: site.founder,
-                url: `${site.url}/about`,
-                jobTitle: site.roles,
+                image: absoluteUrl(site.avatar.jpg),
+                url: site.url,
+                jobTitle: site.jobTitle,
+                description: site.personDescription,
                 sameAs
               },
               offers: {

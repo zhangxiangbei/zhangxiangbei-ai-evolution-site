@@ -1,3 +1,4 @@
+import { OfficialAvatar } from "@/components/OfficialAvatar";
 import { site } from "@/lib/site";
 
 type SourceInfoProps = {
@@ -10,6 +11,13 @@ export function SourceInfo({ title, version = "v0.1", lastUpdated = "2026-06-13"
   return (
     <section className="source-info" aria-labelledby="source-info-title">
       <h2 id="source-info-title">信源信息</h2>
+      <div className="source-author-card">
+        <OfficialAvatar className="source-author-avatar" width={64} height={64} sizes="64px" />
+        <div>
+          <strong>{site.founder}</strong>
+          <p>张向北 · AI产业研究者，张向北AI进化论主理人</p>
+        </div>
+      </div>
       <dl className="meta-table">
         <dt>首次发布</dt>
         <dd>2026</dd>

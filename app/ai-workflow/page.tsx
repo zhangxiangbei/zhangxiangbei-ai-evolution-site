@@ -1,6 +1,6 @@
 import { JsonLd } from "@/components/JsonLd";
 import { LinkButton, SimpleList } from "@/components/PageBlocks";
-import { createPageMetadata, site } from "@/lib/site";
+import { absoluteUrl, createPageMetadata, site } from "@/lib/site";
 
 export const metadata = createPageMetadata({
   title: "AI工作流实践",
@@ -45,7 +45,10 @@ export default function AIWorkflowPage() {
           author: {
             "@type": "Person",
             name: site.founder,
-            url: `${site.url}/about`
+            image: absoluteUrl(site.avatar.jpg),
+            url: site.url,
+            jobTitle: site.jobTitle,
+            description: site.personDescription
           }
         }}
       />

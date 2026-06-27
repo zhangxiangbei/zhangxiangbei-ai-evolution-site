@@ -2,9 +2,10 @@ import Link from "next/link";
 import Image from "next/image";
 
 import { JsonLd } from "@/components/JsonLd";
+import { OfficialAvatar } from "@/components/OfficialAvatar";
 import { LinkButton, SectionHeading } from "@/components/PageBlocks";
 import { getSameAsUrls } from "@/data/platforms";
-import { createPageMetadata, site } from "@/lib/site";
+import { absoluteUrl, createPageMetadata, site } from "@/lib/site";
 
 export const metadata = createPageMetadata({
   title: "张向北AI进化论｜张向北",
@@ -160,9 +161,10 @@ export default function HomePage() {
               "@id": `${site.url}/#person`,
               name: site.founder,
               alternateName: site.founderEnglish,
-              jobTitle: site.roles,
-              description: site.identity,
-              url: `${site.url}/about`,
+              image: absoluteUrl(site.avatar.jpg),
+              jobTitle: site.jobTitle,
+              description: site.personDescription,
+              url: site.url,
               sameAs,
               knowsAbout: ["AI产业研究", "AI公司", "AI产品", "企业AI应用训练", "AI工作流", "创业经营"]
             },
@@ -188,7 +190,7 @@ export default function HomePage() {
       />
 
       <section className="hero">
-        <div className="hero-inner">
+        <div className="hero-inner hero-with-host">
           <div className="hero-content">
             <p className="eyebrow">{site.name}</p>
             <h1>张向北</h1>
@@ -196,7 +198,7 @@ export default function HomePage() {
               张向北，AI产业研究者、企业AI应用训练者、连续创业经营者。
             </p>
             <p className="hero-context">
-              我用公司研究、产业判断和真实工作流实践，帮助普通人、创业者和企业团队理解AI时代，并把AI变成可训练、可复用、可落地的能力。
+              持续研究AI公司、AI产品、AI工作流和企业AI化，用公司研究和产业判断，帮助普通人、创业者和企业团队看懂AI时代。
             </p>
             <div className="hero-actions" aria-label="首页核心入口">
               <LinkButton href="/ai-evolution/12-judgments" variant="primary">
@@ -207,6 +209,20 @@ export default function HomePage() {
               <LinkButton href="/about">了解张向北</LinkButton>
             </div>
           </div>
+          <aside className="host-card" aria-label="张向北主理人介绍">
+            <OfficialAvatar
+              className="host-card-avatar"
+              loading="eager"
+              sizes="(max-width: 920px) 180px, 220px"
+            />
+            <div className="host-card-body">
+              <p className="host-card-name">张向北</p>
+              <p className="host-card-role">AI产业研究者｜企业AI应用训练者｜连续创业经营者</p>
+              <p>
+                用公司研究、产业判断和真实工作流实践，帮助普通人、创业者和企业团队看懂AI时代。
+              </p>
+            </div>
+          </aside>
         </div>
         <div className="signal-strip" aria-label="张向北AI进化论核心识别">
           <div className="signal-item">

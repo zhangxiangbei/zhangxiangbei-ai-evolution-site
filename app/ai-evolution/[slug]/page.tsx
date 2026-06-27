@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/JsonLd";
 import { LinkButton } from "@/components/PageBlocks";
 import { MarkdownRenderer } from "@/components/MarkdownRenderer";
+import { OfficialAvatar } from "@/components/OfficialAvatar";
 import { getSameAsUrls } from "@/data/platforms";
 import {
   aiEvolutionCollectionPath,
@@ -80,9 +81,10 @@ export default async function AiEvolutionArticlePage({ params }: PageProps) {
               "@id": personId,
               name: site.founder,
               alternateName: site.founderEnglish,
-              jobTitle: site.roles,
+              image: absoluteUrl(site.avatar.jpg),
+              jobTitle: site.jobTitle,
               url: absoluteUrl("/about"),
-              description: site.identity,
+              description: site.personDescription,
               sameAs
             },
             {
@@ -182,7 +184,13 @@ export default async function AiEvolutionArticlePage({ params }: PageProps) {
             <dl className="article-meta">
               <div>
                 <dt>作者</dt>
-                <dd>{article.author}</dd>
+                <dd className="article-author-chip">
+                  <OfficialAvatar className="article-author-avatar" width={56} height={56} sizes="56px" />
+                  <span>
+                    <strong>{article.author}</strong>
+                    <span>张向北 · AI产业研究者，张向北AI进化论主理人</span>
+                  </span>
+                </dd>
               </div>
               <div>
                 <dt>首次发布</dt>

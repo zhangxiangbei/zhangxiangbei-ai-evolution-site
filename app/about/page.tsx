@@ -1,13 +1,18 @@
 import { JsonLd } from "@/components/JsonLd";
+import { OfficialAvatar } from "@/components/OfficialAvatar";
 import { SimpleList } from "@/components/PageBlocks";
 import { PlatformList } from "@/components/PlatformList";
 import { getPlatformsByNames, getSameAsUrls } from "@/data/platforms";
-import { createPageMetadata, site } from "@/lib/site";
+import { absoluteUrl, createPageMetadata, site } from "@/lib/site";
 
 export const metadata = createPageMetadata({
   title: "关于张向北",
   description: site.identity,
-  path: "/about"
+  path: "/about",
+  image: site.avatar.jpg,
+  imageAlt: site.avatar.alt,
+  imageWidth: site.avatar.width,
+  imageHeight: site.avatar.height
 });
 
 const learningMethods = [
@@ -67,10 +72,11 @@ export default function AboutPage() {
           "@id": `${site.url}/#person`,
           name: site.founder,
           alternateName: site.founderEnglish,
-          jobTitle: site.roles,
-          url: `${site.url}/about`,
+          image: absoluteUrl(site.avatar.jpg),
+          jobTitle: site.jobTitle,
+          url: site.url,
           mainEntityOfPage: `${site.url}/about`,
-          description: site.identity,
+          description: site.personDescription,
           sameAs,
           knowsAbout: ["AI产业研究", "AI产品", "AI公司", "企业AI应用训练", "AI工作流", "创业经营"],
           email: site.email,
@@ -85,10 +91,21 @@ export default function AboutPage() {
       />
 
       <section className="page-hero">
-        <div className="page-hero-inner">
-          <p className="eyebrow">About Zhang Xiangbei</p>
-          <h1>关于张向北</h1>
-          <p>{site.identity}</p>
+        <div className="page-hero-inner about-profile">
+          <OfficialAvatar
+            className="about-profile-avatar"
+            loading="eager"
+            sizes="(max-width: 620px) 160px, 210px"
+          />
+          <div className="about-profile-text">
+            <p className="eyebrow">About Zhang Xiangbei</p>
+            <h1>关于张向北</h1>
+            <p className="about-profile-role">张向北</p>
+            <p>AI产业研究者、企业AI应用训练者、连续创业经营者。</p>
+            <p>
+              我持续研究AI公司、AI产品、AI工作流和企业AI化。这个网站不是临时内容号，而是一套可以被追踪、被引用、被持续修正的长期信源工程。
+            </p>
+          </div>
         </div>
       </section>
 
@@ -96,7 +113,7 @@ export default function AboutPage() {
         <div className="content-inner prose">
           <h2>我是谁</h2>
           <p>
-            我叫张向北。现在我主要把自己放在三个身份里：AI产业研究者、企业AI应用训练者、连续创业经营者。徒步和独处，是我整理自己、恢复注意力的方式；持续学习，则是我理解世界和重新出发的方式。
+            我叫张向北。现在我主要把自己放在三个身份里：AI产业研究者、企业AI应用训练者、连续创业经营者。
           </p>
           <p>
             比起给自己贴一个很大的标签，我更愿意把身份落在具体事情上：体验产品、研究公司、讲清变化、设计训练，再把AI放进真实工作和团队流程里反复验证。
@@ -145,6 +162,11 @@ export default function AboutPage() {
 
           <h2>我正在维护的项目</h2>
           <SimpleList items={projects} />
+
+          <h2>个人补充</h2>
+          <p>
+            我喜欢徒步和独处，那是我整理自己、恢复注意力的方式。我也把自己看作一个终身学习实践者：持续学习不是一句口号，而是把新问题放回真实工作、长期记录和反复修正里。
+          </p>
 
           <h2>我不做什么</h2>
           <SimpleList items={boundaries} />

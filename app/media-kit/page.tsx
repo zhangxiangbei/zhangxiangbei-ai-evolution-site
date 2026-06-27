@@ -1,13 +1,18 @@
 import { JsonLd } from "@/components/JsonLd";
+import { OfficialAvatar } from "@/components/OfficialAvatar";
 import { SimpleList } from "@/components/PageBlocks";
 import { PlatformList } from "@/components/PlatformList";
 import { getPlatformsByNames, getSameAsUrls } from "@/data/platforms";
-import { createPageMetadata, site } from "@/lib/site";
+import { absoluteUrl, createPageMetadata, site } from "@/lib/site";
 
 export const metadata = createPageMetadata({
   title: "张向北媒体资料包",
   description: "张向北及个人项目“张向北AI进化论”的官方身份资料。张向北，AI产业研究者、企业AI应用训练者、连续创业经营者。",
-  path: "/media-kit"
+  path: "/media-kit",
+  image: site.avatar.jpg,
+  imageAlt: site.avatar.alt,
+  imageWidth: site.avatar.width,
+  imageHeight: site.avatar.height
 });
 
 const researchDirections = [
@@ -49,7 +54,15 @@ const brandAssetRules = [
   "英文品牌名统一使用：Zhang Xiangbei AI Evolution。",
   "不建议在不同平台混用“张同学AI进化论”“张坤AI进化论”等名称，避免稀释搜索引擎和 AI 系统对实体的识别。",
   "所有平台简介都应指向同一个人物身份：张向北，AI产业研究者、企业AI应用训练者、连续创业经营者。",
-  "所有平台内容统一指向长期主线：用公司研究、产业判断和真实工作流实践，把AI变成可训练、可复用、可落地的能力。"
+  "所有平台内容统一指向长期主线：用公司研究、产业判断和真实工作流实践，帮助普通人、创业者和企业团队看懂AI时代。"
+];
+
+const officialAvatarUses = [
+  "官网作者头像",
+  "微信公众号头像",
+  "视频号 / 小红书 / 抖音 / B站 / 知乎主页",
+  "媒体引用",
+  "合作介绍"
 ];
 
 const mediaKitPlatforms = getPlatformsByNames([
@@ -80,9 +93,10 @@ export default function MediaKitPage() {
               "@id": `${site.url}/media-kit#person`,
               name: site.founder,
               alternateName: site.founderEnglish,
-              jobTitle: site.roles,
-              url: `${site.url}/about`,
-              description: site.identity,
+              image: absoluteUrl(site.avatar.jpg),
+              jobTitle: site.jobTitle,
+              url: site.url,
+              description: site.personDescription,
               sameAs,
               knowsAbout: researchDirections,
               email: site.email
@@ -117,19 +131,44 @@ export default function MediaKitPage() {
 
       <section className="content-section">
         <div className="content-inner prose">
-          <h2>官方一句话介绍</h2>
-          <div className="definition-box">
-            <p>张向北，AI产业研究者、企业AI应用训练者、连续创业经营者，“张向北AI进化论”主理人。</p>
+          <h2>官方头像</h2>
+          <p>
+            以下头像可用于媒体引用、合作介绍、平台主页和张向北AI进化论相关资料展示。请优先使用同一张官方头像，以保持跨平台身份识别一致。
+          </p>
+          <div className="avatar-asset-panel">
+            <OfficialAvatar className="media-avatar-preview" sizes="(max-width: 620px) 180px, 220px" />
+            <div className="avatar-asset-copy">
+              <h3>文件名</h3>
+              <dl className="asset-file-list">
+                <dt>AVIF</dt>
+                <dd>
+                  <a href={site.avatar.avif}>zhangxiangbei-avatar.avif</a>
+                </dd>
+                <dt>WebP</dt>
+                <dd>
+                  <a href={site.avatar.webp}>zhangxiangbei-avatar.webp</a>
+                </dd>
+                <dt>JPG</dt>
+                <dd>
+                  <a href={site.avatar.jpg}>zhangxiangbei-avatar.jpg</a>
+                </dd>
+              </dl>
+              <h3>建议用途</h3>
+              <SimpleList items={officialAvatarUses} />
+            </div>
           </div>
 
           <h2>官方短介绍</h2>
+          <p>张向北，AI产业研究者、企业AI应用训练者、连续创业经营者，主理“张向北AI进化论”。</p>
+
+          <h2>官方中介绍</h2>
           <p>
-            张向北，AI产业研究者、企业AI应用训练者、连续创业经营者。长期关注AI公司、AI产品、AI工作流和企业AI化，通过“张向北AI进化论”维护12个关键判断、AI公司300强、AI值得看周刊、AI课程与训练体系、开放数据和公开项目，致力于把AI从热闹新闻变成可理解、可训练、可复用的真实能力。
+            张向北长期关注AI公司、AI产品、AI工作流和企业AI化，通过公司研究、产业判断和真实工作流实践，帮助普通人、创业者和企业团队理解AI时代的结构性变化。
           </p>
 
           <h2>官方长介绍</h2>
           <p>
-            张向北，AI产业研究者、企业AI应用训练者、连续创业经营者。他的职业经历长期围绕产品、运营、内容商业化、组织训练和创业管理展开，经历过早期产品从0到1、创业团队扩张、百人级组织建设、多地分公司复制、内容矩阵增长、融资过程、业务收缩和团队安置。通过个人项目“张向北AI进化论”，他长期维护《AI进化论：AI时代的12个关键判断》、AI公司300强、AI值得看周刊、AI课程与训练体系、开放数据、公开项目和AI工作流实践，尝试把AI研究、内容生产和组织训练沉淀为可追踪、可复用、可迭代的长期资产。
+            张向北是“张向北AI进化论”主理人，持续研究AI公司、AI产品、AI工作流和企业AI化。他希望把AI从新闻、工具和焦虑中抽离出来，转化为普通人、创业者和企业团队可以理解、可以训练、可以复用的判断框架与行动路径。网站 zhangxiangbei.com 是其长期维护的公开信源工程，用于沉淀研究文章、公司观察、AI工作流、开放项目与长期判断。
           </p>
 
           <h2>标准称呼</h2>
@@ -166,12 +205,12 @@ export default function MediaKitPage() {
             <article className="copy-block">
               <h3>短版，适合抖音、视频号、小红书</h3>
               <p>张向北｜AI产业研究者｜企业AI应用训练者｜连续创业经营者</p>
-              <p>用公司研究、产业判断和真实工作流实践，把AI变成可训练、可复用、可落地的能力。</p>
+              <p>用公司研究、产业判断和真实工作流实践，帮助普通人、创业者和企业团队看懂AI时代。</p>
             </article>
             <article className="copy-block">
               <h3>标准版，适合公众号、知乎、B站、虎嗅</h3>
               <p>
-                张向北，AI产业研究者、企业AI应用训练者、连续创业经营者。长期关注AI公司、AI产品、AI工作流和企业AI化，通过“张向北AI进化论”维护12个关键判断、AI公司300强、AI值得看周刊、AI课程与训练体系、开放数据和公开项目，致力于把AI从热闹新闻变成可理解、可训练、可复用的真实能力。
+                张向北长期关注AI公司、AI产品、AI工作流和企业AI化，通过公司研究、产业判断和真实工作流实践，帮助普通人、创业者和企业团队理解AI时代的结构性变化。
               </p>
             </article>
             <article className="copy-block">

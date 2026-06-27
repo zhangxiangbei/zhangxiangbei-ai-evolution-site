@@ -1,7 +1,7 @@
 import { JsonLd } from "@/components/JsonLd";
 import { PlatformCard, PlatformList } from "@/components/PlatformList";
 import { getPlatformsByNames, getSameAsUrls } from "@/data/platforms";
-import { createPageMetadata, site } from "@/lib/site";
+import { absoluteUrl, createPageMetadata, site } from "@/lib/site";
 
 export const metadata = createPageMetadata({
   title: "张向北AI进化论全平台入口",
@@ -49,6 +49,17 @@ export default function LinksPage() {
               alternateName: site.englishName,
               description: site.tagline,
               url: site.url,
+              sameAs
+            },
+            {
+              "@type": "Person",
+              "@id": `${site.url}/#person`,
+              name: site.founder,
+              alternateName: site.founderEnglish,
+              image: absoluteUrl(site.avatar.jpg),
+              url: site.url,
+              jobTitle: site.jobTitle,
+              description: site.personDescription,
               sameAs
             },
             {

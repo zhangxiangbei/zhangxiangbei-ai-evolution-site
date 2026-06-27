@@ -2,7 +2,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { NumberedList } from "@/components/PageBlocks";
 import { SourceInfo } from "@/components/SourceInfo";
 import { getSameAsUrls } from "@/data/platforms";
-import { createPageMetadata, site } from "@/lib/site";
+import { absoluteUrl, createPageMetadata, site } from "@/lib/site";
 
 export const metadata = createPageMetadata({
   title: "什么是AI进化论？",
@@ -67,6 +67,10 @@ export default function AiEvolutionPage() {
           author: {
             "@type": "Person",
             name: site.founder,
+            image: absoluteUrl(site.avatar.jpg),
+            url: site.url,
+            jobTitle: site.jobTitle,
+            description: site.personDescription,
             sameAs
           },
           publisher: {

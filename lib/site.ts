@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 
+const officialIdentity =
+  "张向北，AI产业研究者、企业AI应用训练者、连续创业经营者。持续研究AI公司、AI产品、AI工作流和企业AI化，用公司研究和产业判断，帮助普通人、创业者和企业团队看懂AI时代。";
+
 export const site = {
   name: "张向北AI进化论",
   englishName: "Zhang Xiangbei AI Evolution",
@@ -7,15 +10,23 @@ export const site = {
   url: "https://www.zhangxiangbei.com",
   ogImage: "/og-default.svg",
   email: "contact@zhangxiangbei.com",
-  identity:
-    "张向北，AI产业研究者、企业AI应用训练者、连续创业经营者。持续研究AI公司、AI产品、AI工作流和企业AI化，把AI从热闹新闻变成可理解、可训练、可复用的真实能力。",
-  tagline: "用公司研究、产业判断和真实工作流实践，把AI变成可训练、可复用、可落地的能力。",
-  description:
-    "张向北，AI产业研究者、企业AI应用训练者、连续创业经营者。通过张向北AI进化论持续整理AI公司研究、AI产品观察、AI工作流实践、AI训练体系和公开项目。",
+  identity: officialIdentity,
+  tagline: "用公司研究、产业判断和真实工作流实践，帮助普通人、创业者和企业团队看懂AI时代。",
+  description: officialIdentity,
+  personDescription: "用公司研究和产业判断，帮助普通人、创业者和企业团队看懂AI时代",
   founder: "张向北",
   founderEnglish: "Zhang Xiangbei",
+  jobTitle: "AI产业研究者、企业AI应用训练者、连续创业经营者",
   roles: ["AI产业研究者", "企业AI应用训练者", "连续创业经营者"],
-  rolesEnglish: ["AI Industry Researcher", "Enterprise AI Application Trainer", "Serial Entrepreneur and Operator"]
+  rolesEnglish: ["AI Industry Researcher", "Enterprise AI Application Trainer", "Serial Entrepreneur and Operator"],
+  avatar: {
+    jpg: "/images/zhangxiangbei-avatar.jpg",
+    webp: "/images/zhangxiangbei-avatar.webp",
+    avif: "/images/zhangxiangbei-avatar.avif",
+    width: 1024,
+    height: 1024,
+    alt: "张向北，张向北AI进化论主理人"
+  }
 };
 
 type PageMetadataInput = {
@@ -23,6 +34,10 @@ type PageMetadataInput = {
   description: string;
   path: string;
   type?: "website" | "article";
+  image?: string;
+  imageAlt?: string;
+  imageWidth?: number;
+  imageHeight?: number;
 };
 
 export function absoluteUrl(path = "/") {
@@ -37,11 +52,15 @@ export function createPageMetadata({
   title,
   description,
   path,
-  type = "website"
+  type = "website",
+  image = site.ogImage,
+  imageAlt,
+  imageWidth = 1200,
+  imageHeight = 630
 }: PageMetadataInput): Metadata {
   const url = absoluteUrl(path);
   const fullTitle = title.includes(site.name) ? title : `${title} | ${site.name}`;
-  const imageUrl = absoluteUrl(site.ogImage);
+  const imageUrl = absoluteUrl(image);
 
   return {
     metadataBase: new URL(site.url),
@@ -69,9 +88,9 @@ export function createPageMetadata({
       images: [
         {
           url: imageUrl,
-          width: 1200,
-          height: 630,
-          alt: `${site.name} - ${site.tagline}`
+          width: imageWidth,
+          height: imageHeight,
+          alt: imageAlt || `${site.name} - ${site.tagline}`
         }
       ]
     },

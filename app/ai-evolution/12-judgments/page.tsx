@@ -53,6 +53,10 @@ export default function TwelveJudgmentsPage() {
                 "@type": "Person",
                 "@id": `${site.url}/#person`,
                 name: site.founder,
+                image: absoluteUrl(site.avatar.jpg),
+                url: site.url,
+                jobTitle: site.jobTitle,
+                description: site.personDescription,
                 sameAs
               },
               publisher: {

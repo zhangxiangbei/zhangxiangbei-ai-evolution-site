@@ -30,7 +30,7 @@ export function SiteFooter() {
     <footer className="site-footer">
       <div>
         <p className="footer-title">张向北 · {site.name}</p>
-        <p>{site.tagline}</p>
+        <p>{site.identity}</p>
       </div>
       <div className="footer-links" aria-label="页脚导航">
         {footerLinks.map((item) =>
