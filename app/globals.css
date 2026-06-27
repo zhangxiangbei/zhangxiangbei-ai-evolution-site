@@ -66,21 +66,26 @@ strong {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   min-width: 220px;
+  color: var(--black);
+  white-space: nowrap;
 }
 
-.brand-mark {
-  display: grid;
-  place-items: center;
-  width: 52px;
-  height: 42px;
-  border: 1px solid var(--ink);
-  border-radius: var(--radius);
-  background: var(--black);
-  color: #f6fff9;
-  font-size: 15px;
-  font-weight: 900;
+.brand-greeting {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  min-height: 30px;
+  padding: 4px 10px;
+  border: 1px solid rgba(0, 116, 74, 0.22);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--green-dark);
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 13px;
+  font-weight: 850;
   letter-spacing: 0;
 }
 
@@ -1703,11 +1708,18 @@ main {
 
 @media (max-width: 620px) {
   .brand {
+    gap: 8px;
     min-width: auto;
   }
 
   .brand-text {
-    display: none;
+    font-size: 15px;
+  }
+
+  .brand-greeting {
+    min-height: 28px;
+    padding: 3px 9px;
+    font-size: 12px;
   }
 
   .hero-inner,

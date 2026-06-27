@@ -5,8 +5,8 @@ export function SiteHeader() {
   return (
     <header className="site-header">
       <Link href="/" className="brand" aria-label="张向北 · AI进化论首页">
-        <span className="brand-mark" aria-hidden="true">
-          向北
+        <span className="brand-greeting" aria-hidden="true">
+          Hi.
         </span>
         <span className="brand-text">
           <span>张向北 · AI进化论</span>
